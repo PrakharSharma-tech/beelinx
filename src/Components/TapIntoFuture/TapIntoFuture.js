@@ -5,6 +5,7 @@ const TapIntoFutureSection = () => {
   return (
     <div style={{backgroundColor:"white" , height:"500px", justifyContent:"center", alignContent:"center"}}>
        <div style={{margin:"30px"}}>
+       // eslint-disable-next-line jsx-a11y/anchor-is-valid
         <a href="#" className="feature-link">
                 More Customer stories →
               </a>

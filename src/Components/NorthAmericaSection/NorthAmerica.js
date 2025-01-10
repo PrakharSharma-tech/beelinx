@@ -67,7 +67,7 @@ const NorthAmericaSection = () => {
           <li>Monday to Friday: 9:00 AM - 6:00 PM</li>
           <li>Saturday and Sunday: Closed</li>
           <li>Our Social Media:</li>
-          <li><div style={{marginTop:"20px"}} class="footer-social"><a href="https://www.facebook.com" target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i></a><a href="https://www.twitter.com" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a><a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a><a href="https://www.instagram.com" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a></div></li>
+          <li><div style={{marginTop:"20px"}} className="footer-social"><a href="https://www.facebook.com" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a><a href="https://www.twitter.com" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a><a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in"></i></a><a href="https://www.instagram.com" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a></div></li>
           </ul>
         </div>
       </div>
