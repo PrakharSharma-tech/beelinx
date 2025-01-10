@@ -1,0 +1,79 @@
+.Beelinx-banner4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align the content at the top */
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    gap: 20px;
+}
+
+.content4 {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: flex-start; /* Keep content aligned at the top */
+    text-align: center; /* Center text content */
+    
+}
+
+.content4 h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.content4 p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.templates-section4 h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.templates-section4 p {
+    line-height: 1.6;
+    
+
+}
+
+.video-preview4 {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align the video at the top */
+    align-items: center; /* Center the video horizontally */
+    
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.video-preview4 h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.video-container4 {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    margin-top: 10px;
+    width: 100%;
+}
+
+.video-container4 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}

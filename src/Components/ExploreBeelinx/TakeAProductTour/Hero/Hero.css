@@ -1,0 +1,116 @@
+/* General container styling */
+.hero-section-tour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eff6f5;
+    padding: 40px 20px;
+    position: relative;
+    box-sizing: border-box; /* Ensure padding doesn't shrink elements */
+    height: 500px;
+  }
+  
+  .hero-container-tour {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  /* Left and Right Images */
+  .hero-image-tour {
+    position: absolute;
+    width: 400px; /* Fixed width */
+    height: auto;
+  }
+  
+  .hero-image-tour.left {
+    left: -180px; /* Shift further left */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .hero-image-tour.right {
+    right: -100px; /* Shift further right */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Content styling */
+  .hero-content-tour {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .hero-title-tour {
+    font-size: 2.5rem;
+    color: #1c1c1c;
+    margin: 0 0 15px;
+    font-weight: 700;
+  }
+  
+  .brand {
+    color: #37b95e; /* Beelinx Brand color */
+  }
+  
+  .hero-subtitle-tour {
+    font-size: 1rem;
+    color: #5f6368;
+    margin-bottom: 20px;
+  }
+  
+  /* Input and Button styling */
+  .hero-input-container-tour {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .hero-input-tour {
+    padding: 12px 15px;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box; /* Ensure consistent sizing */
+  }
+  
+  .hero-button-tour {
+    background-color: #00c16e;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .hero-button-tour:hover {
+    background-color: #009955;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .hero-container-tour {
+      flex-direction: column;
+    }
+  
+    .hero-image-tour {
+      display: none; /* Hide images on smaller screens */
+    }
+  
+    .hero-title-tour {
+      font-size: 2rem;
+    }
+  
+    .hero-input-tour {
+      width: 100%;
+    }
+  }
+  

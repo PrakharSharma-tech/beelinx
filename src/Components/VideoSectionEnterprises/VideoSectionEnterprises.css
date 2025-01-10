@@ -1,0 +1,69 @@
+.discover-Beelinx-section {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+    height: 500px;
+    margin-bottom: -30px;
+  }
+  
+  .discover-Beelinx-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .feature-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    color: #1e2433;
+  }
+  
+ 
+  
+  .feature-card p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .video-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .video-thumbnail {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00b36a;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .play-icon {
+    color: #ffffff;
+    font-size: 20px;
+  }
+  

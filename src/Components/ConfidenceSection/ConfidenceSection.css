@@ -1,0 +1,103 @@
+.confidence-section {
+    background-color: #f2fcf8;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  
+  .confidence-content{
+
+   margin-left: 20px;
+   margin-right: 20px;
+
+  }
+  .confidence-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .confidence-content p {
+    color: #4f4f4f;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+  }
+  
+  .confidence-stats {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .stat h3 {
+    font-size: 2rem;
+    color: #00796b;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat p {
+    color: #4f4f4f;
+  }
+  
+  .confidence-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .primary-button {
+    background-color: #08cf65;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .secondary-button {
+    background-color: transparent;
+    color: #08cf65;
+    border: 2px solid #08cf65;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .primary-button:hover,
+  .secondary-button:hover {
+    opacity: 0.9;
+  }
+  
+  .confidence-footer {
+    margin-top: .5rem;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .confidence-footer p {
+    color: #4f4f4f;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .logos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .logos img {
+    max-height: 40px;
+    object-fit: contain;
+  }
+  

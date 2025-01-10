@@ -1,0 +1,66 @@
+.tap-into-future-section {
+    background-color: #ffffff; /* Matches the teal background */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+ 
+  .content-container {
+    background-color: #dff9ff; /* Darker container background */
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    max-width: 800px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .section-description {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .cta-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .cta-button.primary {
+    background-color: #00c867; /* Matches the green button color */
+    color: #ffffff;
+  }
+  
+  .cta-button.primary:hover {
+    background-color: #00a957; /* Darker green on hover */
+  }
+  
+  .cta-button.secondary {
+    background-color: transparent;
+    color: #00c867;
+    border: 2px solid #00c867;
+  }
+  
+  .cta-button.secondary:hover {
+    background-color: rgba(0, 200, 103, 0.1); /* Slight green tint on hover */
+  }
+

@@ -1,0 +1,58 @@
+.platform-section {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 60px 20px;
+  }
+  
+  .platform-header {
+    margin-bottom: 40px;
+  }
+  
+  .platform-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #232129;
+    margin-bottom: 20px;
+  }
+  
+  .platform-description {
+    font-size: 16px;
+    color: #4a4745;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .platform-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .feature-icon6-MeetThePlatform-Beelinx {
+    width: 90px;
+    height: auto;
+    margin-bottom: 20px;
+    align-self: center;
+    padding-left: 80px;
+  }
+  
+  .feature-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #232129;
+    margin-bottom: 10px;
+  }
+  
+  .feature-description {
+    font-size: 14px;
+    color: #4a4745;
+    line-height: 1.6;
+  }
+  

@@ -1,0 +1,79 @@
+/* BeelinxComponent.css */
+
+.Beelinx-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 50px;
+    
+    background-color: #f9f9f9;
+    gap: 50px;
+    row-gap: 50px;
+    height: 500px;
+  }
+  
+  .Beelinx-content {
+    max-width: 50%;
+    
+padding: 30px;
+  }
+  
+  .Beelinx-content h1 {
+    font-size: 2.5rem;
+    color: #2d2d2d;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .Beelinx-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .Beelinx-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .try-button {
+    background-color: #1abc5b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .try-button:hover {
+    background-color: #16a085;
+  }
+  
+  .contact-button {
+    background-color: transparent;
+    color: #2d2d2d;
+    border: 2px solid #2d2d2d;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-button:hover {
+    background-color: #2d2d2d;
+    color: white;
+  }
+  
+  .Beelinx-image {
+    max-width: 45%;
+    text-align: right;
+  }
+  
+  .project-status-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+  }
+  

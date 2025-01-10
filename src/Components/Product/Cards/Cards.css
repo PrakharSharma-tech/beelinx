@@ -1,0 +1,73 @@
+.features-container2 {
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    background-color: #f8f6f4;
+    padding: 60px 20px;
+    padding-inline: 50px;
+}
+
+.features-header2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #232129;
+    margin-bottom: 40px;
+
+}
+
+.features-grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two cards in each row */
+    gap: 10px;
+    max-width: 1200px; /* Adjust to align with card size */
+    margin: 0 auto;
+    
+}
+
+.feature-card2 {
+    background-color: #ffffff;
+    border: 1px solid #e4e2df;
+    border-radius: 8px;
+    padding: 60px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    width: 500px; /* Card width set */
+    height: auto; /* Ensure content fits naturally */
+    
+}
+
+.feature-card.highlight2 {
+    border: 2px solid #28a745;
+}
+
+.feature-type2 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6f6c6a;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.feature-title2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #232129;
+    margin-bottom: 10px;
+}
+
+.feature-description2 {
+    font-size: 14px;
+    color: #4a4745;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.feature-link2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.feature-link2:hover {
+    text-decoration: underline;
+}

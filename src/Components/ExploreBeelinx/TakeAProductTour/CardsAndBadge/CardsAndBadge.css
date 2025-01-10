@@ -1,0 +1,97 @@
+/* General Section Styling */
+.customer-results-section {
+    padding: 50px 20px;
+    background-color: #f8fcfb;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    height:530px;
+  }
+  
+  /* Section Heading */
+  .results-heading h2 {
+    font-size: 2rem;
+    color: #1c1c1c;
+    margin-bottom: 40px;
+  }
+  
+  /* Results Container */
+  .results-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  
+  .result-card {
+    background-color: #e8f5f4;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .result-card:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .result-title {
+    font-size: 1.2rem;
+    color: #1c1c1c;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .siemens {
+    color: #00b5a6;
+  }
+  
+  .syneos-logo {
+    color: #ff6d00;
+    font-weight: bold;
+  }
+  
+  .result-number {
+    font-size: 2.5rem;
+    color: #00b964;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .result-description {
+    font-size: 1rem;
+    color: #5f6368;
+    margin-bottom: 15px;
+  }
+  
+  .result-link {
+    color: #0073ea;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .result-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Image Styling */
+  .result-image {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+  
+  /* Awards Container */
+  .awards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .awards-container img {
+    width: 100px;
+    height: auto;
+  }
+  

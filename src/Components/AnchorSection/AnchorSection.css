@@ -1,0 +1,52 @@
+.anchor-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    box-sizing :content-box;
+    
+  }
+  
+  .anchor-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    border: 1px solid #000000; /* Add a border for a boxed effect */
+  }
+  
+  .anchor-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    
+  }
+  
+  .anchor-nav li {
+    font-size: 18px;
+  }
+  
+  .anchor-nav a {
+    text-decoration: underline;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    
+  }
+  
+  .anchor-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .anchor-content {
+    margin-bottom: 50px;
+  }
+  
+  .anchor-content h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .anchor-content p {
+    font-size: 16px;
+    color: #555;
+  }
+  

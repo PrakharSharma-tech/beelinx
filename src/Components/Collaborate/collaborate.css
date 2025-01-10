@@ -1,0 +1,71 @@
+.collaborate-section {
+    background-color: #1e1e2f; /* Dark background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 60px 60px;
+    border-radius: 8px;
+    align-items: left;
+    margin-left: 80px;
+    margin-right: 80px;
+    
+  }
+  
+  .collaborate-heading {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    align-items: left;
+    text-align: left;
+   
+  }
+  
+  .collaborate-subtext {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #d3d3d3; /* Light gray for subtext */
+    align-items: left;
+    text-align: left;
+    width: 1200px;
+  }
+  
+  .collaborate-stats {
+    display: flex;
+    justify-content: left;
+    gap: 300px;
+    margin-bottom: 60px;
+    text-align: left;
+    margin-top: 60px;
+  }
+  
+  .stat {
+    text-align: left;
+  }
+  
+  .stat h3 {
+    font-size: 2.5rem;
+    color: #4caf50; /* Green color for emphasis */
+    margin-bottom: 5px;
+    text-align: left;
+    align-items: left;
+  }
+  
+  .stat p {
+    font-size: 1rem;
+    color: #d3d3d3;
+  }
+  
+  .collaborate-btn {
+    background-color: #4caf50; /* Green button */
+    color: #ffffff;
+    border: none;
+    padding: 20px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .collaborate-btn:hover {
+    background-color: #43a047; /* Slightly darker green on hover */
+  }
+  

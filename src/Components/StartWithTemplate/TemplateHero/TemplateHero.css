@@ -1,0 +1,75 @@
+/* General Section Styling */
+.templates-section {
+    text-align: center;
+    background-color: #f5f7fa;
+    padding: 60px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Title and Subtitle */
+  .templates-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1c1e21;
+    margin-bottom: 10px;
+  }
+  
+  .templates-subtitle {
+    font-size: 1rem;
+    color: #52565e;
+    margin-bottom: 25px;
+  }
+  
+  /* Button Styling */
+  .templates-button {
+    background-color: #00cd5a;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .templates-button:hover {
+    background-color: #00b84d;
+  }
+  
+  /* Categories Section */
+  .templates-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+    padding: 50px;
+  }
+  
+  .category-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1c1e21;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .category-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .category-icon {
+    font-size: 1.2rem;
+  }
+  
+  .category-name {
+    white-space: nowrap;
+  }
+  

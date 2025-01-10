@@ -1,0 +1,189 @@
+/* Hero.css */
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Adjust height for responsiveness */
+  background-color: #f5f9f8;
+  padding: 20px;
+  margin-bottom: 0px;
+  flex-wrap: wrap; /* Allow wrapping of content on smaller screens */
+}
+
+/* Hero content */
+.hero-content {
+  max-width: 100%;
+  text-align: left;
+  padding-right: 20px;
+  flex: 1; /* Allow content to fill available space */
+  margin-bottom: 20px; /* Add some spacing for smaller screens */
+}
+
+/* Heading */
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Paragraph */
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Hero buttons */
+.hero-buttons {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* Main button style */
+.hero-buttons button {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #08cf65;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Secondary button */
+.hero-buttons .secondary-button {
+  background-color: #ffffff;
+  border: 2px solid #00b8a9;
+  color: #00b8a9;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-buttons .secondary-button:hover {
+  background-color: #00b8a9;
+  color: white;
+}
+
+/* Hero image */
+.hero-image {
+  max-width: 50%;
+  text-align: center;
+}
+
+/* Hero image image styles */
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Screens (up to 480px) */
+@media screen and (max-width: 480px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Adjust height */
+  }
+
+  .hero-content {
+    max-width: 90%; /* Reduce content width */
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem; /* Adjust heading font size */
+  }
+
+  .hero p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+
+  .hero-buttons button {
+    padding: 12px 25px; /* Adjust button padding */
+    font-size: 0.9rem; /* Adjust font size */
+  }
+
+  .hero-image {
+    max-width: 80%; /* Make image smaller */
+    margin-bottom: 20px;
+  }
+
+  .hero-image img {
+    border-radius: 8px; /* Adjust border radius */
+  }
+}
+
+/* Tablet Screens (481px to 768px) */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Adjust height */
+  }
+
+  .hero-content {
+    max-width: 80%; /* Reduce content width */
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem; /* Adjust heading font size */
+  }
+
+  .hero p {
+    font-size: 1.1rem; /* Adjust paragraph font size */
+  }
+
+  .hero-buttons button {
+    padding: 12px 30px; /* Adjust button padding */
+    font-size: 1rem; /* Adjust font size */
+  }
+
+  .hero-image {
+    max-width: 70%; /* Adjust image size */
+    margin-top: 20px;
+  }
+}
+
+/* Desktop Screens (769px and above) */
+@media screen and (min-width: 769px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 600px; /* Keep original height */
+  }
+
+  .hero-content {
+    max-width: 30%; /* Keep content width */
+    text-align: left;
+  }
+
+  .hero h1 {
+    font-size: 3rem; /* Keep heading font size */
+  }
+
+  .hero p {
+    font-size: 1.1rem; /* Keep paragraph font size */
+  }
+
+  .hero-buttons button {
+    padding: 15px 30px; /* Keep original button padding */
+    font-size: 1rem; /* Keep original font size */
+  }
+
+  .hero-image {
+    max-width: 50%; /* Keep image size */
+  }
+}
