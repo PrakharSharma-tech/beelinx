@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <nav className="navbar" onClick={closeDropdown}>
       <div className="navbar-container">
-       <a href="/" className="logo">Beelinx  </a>
+       <a href="/" className="logo">beelinx  </a>
         <ul className="navbar-links">
         <li onClick={(e) => e.stopPropagation()}>
             <a
@@ -628,7 +628,7 @@ const Navbar = () => {
               className={activeLink === "why-Beelinx" ? "active" : ""}
               onClick={() => { toggleDropdown("why-Beelinx"); handleLinkClick("why-Beelinx"); }}
             >
-              Why Beelinx?
+              Why beelinx?
             </a>
             {dropdown === "why-Beelinx" && (
               <div className="mega-menu" ref={menuRef}>
