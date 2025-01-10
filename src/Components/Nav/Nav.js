@@ -87,42 +87,42 @@ const Navbar = () => {
                         <ul>
                           <li>
                             <i className="fas fa-bullhorn"></i>{" "}
-                            <a href="#">Campaign Management</a>
+                            <a href="/Product">Product</a>
                             <p style={{fontSize:"12px"}}>Streamline Proofing and reporting for seamless campaigns</p>
                           </li>
                           <li>
                             <i className="fas fa-share-alt"></i>{" "}
-                            <a href="#">Social Media</a>
+                            <a href="/BoundlessConfig">Boundless Config</a>
                             <p style={{fontSize:"12px"}}>Streamline Proofing and reporting for seamless campaigns & marketing reporting </p>
                           </li>
                           <li>
                             <i className="fas fa-ad"></i>{" "}
-                            <a href="#">Advertising</a>
+                            <a href="/Dashboard">Dashboard</a>
                             <p style={{fontSize:"12px"}}>Streamline Proofing and reporting for seamless campaigns</p>
                           </li>
                           <li>
                             <i className="fas fa-bullhorn"></i>{" "}
-                            <a href="#">Campaign Management</a>
+                            <a href="/Tour">Tour</a>
                           </li>
                           <li>
                             <i className="fas fa-share-alt"></i>{" "}
-                            <a href="#">Social Media</a>
+                            <a href="/demo">Demo</a>
                           </li>
                           <li>
                             <i className="fas fa-ad"></i>{" "}
-                            <a href="#">Advertising</a>
+                            <a href="/customerstories">Customer Stories</a>
                           </li>
                           <li>
                             <i className="fas fa-bullhorn"></i>{" "}
-                            <a href="#">Campaign Management</a>
+                            <a href="/templates">templates</a>
                           </li>
                           <li>
                             <i className="fas fa-share-alt"></i>{" "}
-                            <a href="#">Social Media</a>
+                            <a href="/roi">roi</a>
                           </li>
                           <li>
                             <i className="fas fa-ad"></i>{" "}
-                            <a href="#">Advertising</a>
+                            <a href="/legal">Legal</a>
                           </li>
                           <li>
                             <i className="fas fa-bullhorn"></i>{" "}

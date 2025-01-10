@@ -5,9 +5,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto; /* Adjust height for responsiveness */
+  height: relative; /* Adjust height for responsiveness */
   background-color: #f5f9f8;
   padding: 20px;
+  padding-inline-start: 120px;
+  padding-inline-end: 120px;
   margin-bottom: 0px;
   flex-wrap: wrap; /* Allow wrapping of content on smaller screens */
 }
@@ -16,7 +18,7 @@
 .hero-content {
   max-width: 100%;
   text-align: left;
-  padding-right: 20px;
+  padding-right: 0px;
   flex: 1; /* Allow content to fill available space */
   margin-bottom: 20px; /* Add some spacing for smaller screens */
 }
