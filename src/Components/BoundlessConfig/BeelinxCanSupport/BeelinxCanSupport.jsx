@@ -4,8 +4,8 @@ import "./BeelinxCanSupport.css";
 const BeelinxCanSupport = () => {
   return (
     <div>
-    <div className="hero-section">
-      <div className="hero-content">
+    <div className="hero-section-bcs">
+      <div className="hero-content-bcs">
         <h1>
         Learn More About Beelinx's Managed Services
         </h1>
@@ -14,12 +14,12 @@ const BeelinxCanSupport = () => {
 
 
 </p>
-        <div className="hero-buttons">
-          <button className="try-button">Try Beelinx for free</button>
-          <button className="contact-button">Request</button>
+        <div className="hero-buttons-bcs">
+          <button className="try-button-bcs">Try Beelinx for free</button>
+          <button className="contact-button-bcs">Request</button>
         </div>
       </div>
-      <div className="hero-image">
+      <div className="hero-image-bcs">
         {/* Primary Image */}
         <img
           src="hero-boundlessconfig.png"

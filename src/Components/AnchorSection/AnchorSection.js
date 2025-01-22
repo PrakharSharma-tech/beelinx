@@ -1,8 +1,5 @@
 import React from "react";
-import OverviewSection from "../VideoSectionEnterprises/VideoSectionEnterprises";
-import FeaturesSection from "../TabSectionEnterprises/TabSectionEnterprises";
-import BenefitsSection from "../EndtoEndEnterprise/EndtoEndEnterprise";
-import SolutionsSection from "../EnterprisesCards/EnterprisesCards";
+
 import "./AnchorSection.css"; // Create or update the CSS file for styling
 
 

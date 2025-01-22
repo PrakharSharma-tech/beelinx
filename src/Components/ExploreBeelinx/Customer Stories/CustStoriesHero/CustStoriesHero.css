@@ -1,37 +1,92 @@
+/* General Styles for Hero Section */
 .hero-container {
-    text-align: center;
-    
-    padding: 60px 20px;
-    background-color: #f5f8fa;
-     /* Placeholder for background image */
-    background-size: cover;
-    background-position: center;
-    height: 250px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f5f8fa;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  background-color: #17c2aa;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #15a698;
+}
+
+/* Mobile Responsiveness (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-container {
+    height: 200px; /* Adjust height for mobile */
+    padding: 40px 15px; /* Reduce padding */
   }
-  
+
   .hero-title {
-    font-size: 2.8rem;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 1.8rem; /* Smaller title for mobile */
+    margin-bottom: 15px; /* Less margin below title */
   }
-  
+
   .hero-button {
-    background-color: #17c2aa;
-    color: #fff;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 10px 20px; /* Adjust button size for mobile */
+    font-size: 1rem; /* Smaller font size */
   }
-  
-  .hero-button:hover {
-    background-color: #15a698;
+}
+
+/* Tablet Responsiveness (max-width: 768px) */
+@media (max-width: 768px) {
+  .hero-container {
+    height: 220px; /* Adjust height for tablets */
+    padding: 50px 20px; /* Adjust padding for tablets */
   }
+
+  .hero-title {
+    font-size: 2.2rem; /* Slightly smaller title */
+    margin-bottom: 18px; /* Adjust margin */
+  }
+
+  .hero-button {
+    padding: 12px 22px; /* Adjust button size for tablets */
+    font-size: 1.05rem; /* Adjust button font size */
+  }
+}
+
+/* Medium Devices (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero-container {
+    height: 230px; /* Adjust height for medium devices */
+    padding: 55px 20px; /* Adjust padding */
+  }
+
+  .hero-title {
+    font-size: 2.5rem; /* Slightly larger title for medium screens */
+    margin-bottom: 20px; /* Adjust margin */
+  }
+
+  .hero-button {
+    padding: 12px 24px; /* Keep button size standard for medium screens */
+    font-size: 1.1rem; /* Keep button font size */
+  }
+}
+
+/* No changes for large devices and desktop screens */

@@ -1,135 +1,199 @@
+/* Hero Section */
 .hero-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    background-color: #ffffff;
-    color: #000000;
-    font-family: Arial, sans-serif;
-    height:500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  height: 500px;
+  margin-bottom: 60px; /* Add space to separate from next section */
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+  color: #43d382;
+  text-decoration: underline;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.try-button,
+.contact-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.try-button {
+  background-color: #43d382;
+  color: #fff;
+}
+
+.contact-button {
+  background-color: transparent;
+  color: #43d382;
+  border: 1px solid #43d382;
+}
+
+.hero-image {
+  position: relative;
+  width: 45%;
+}
+
+.hero-image img.main-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 80px; /* Increased margin to prevent overlap */
   }
-  
+
   .hero-content {
-    max-width: 50%;
+    max-width: 100%;
+    text-align: center;
+    order: 1;
   }
-  
-  .hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero-content h1 span {
-    color: #43d382;
-    text-decoration: underline;
-  }
-  
-  .hero-content ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-  }
-  
-  .hero-content ul li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .hero-buttons {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .try-button,
-  .contact-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  .try-button {
-    background-color: #43d382;
-    color: #fff;
-  }
-  
-  .contact-button {
-    background-color: transparent;
-    color: #43d382;
-    border: 1px solid #43d382;
-  }
-  
+
   .hero-image {
-    position: relative;
-    width: 45%;
-  }
-  
-  .hero-image img.main-image {
     width: 100%;
-    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    order: 2;
   }
-  
-  .progress-overlay {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    display: flex;
+
+  .hero-image img.main-image {
+    width: 80%;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
     flex-direction: column;
     gap: 10px;
   }
-  
-  .progress-card {
-    background-color: #fff;
-    color: #000;
-    padding: 10px;
-    border-radius: 5px;
+
+  /* Add margin to ensure no collapse with confidence footer */
+  .hero-section {
+    margin-bottom: 200px; /* Increase the margin between hero section and footer */
   }
-  
-  .progress-card .progress-bar {
-    background-color: #ddd;
-    height: 5px;
-    border-radius: 5px;
-    margin-top: 5px;
+}
+
+/* Tablet Responsiveness */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+    padding: 30px;
+    margin-bottom: 80px; /* Increased margin to prevent overlap */
   }
-  
-  .progress-bar-fill {
-    height: 100%;
-    background-color: #43d382;
-    border-radius: 5px;
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+    order: 1;
   }
-  
-  .low-risk {
-    color: #43d382;
+
+  .hero-image {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    order: 2;
   }
-  
-  .medium-risk {
-    color: #f5a623;
+
+  .hero-image img.main-image {
+    width: 80%;
   }
-  
-  .resource-capacity {
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    background-color: #fff;
-    color: #000;
-    padding: 10px;
-    border-radius: 5px;
+
+  .hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
-  
-  .resource-capacity .bars {
-    display: flex;
-    gap: 5px;
+
+  .hero-content p {
+    font-size: 1.1rem;
   }
-  
-  .resource-capacity .bars div {
-    background-color: #43d382;
-    width: 20px;
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
   }
-  .overlay-image {
-    position: absolute;
-    top: 20%;
-    left: 3%; /* Adjust positioning */
-    width: 550px; /* Adjust size as needed */
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+  /* Add margin to ensure no collapse with confidence footer */
+  .hero-section {
+    margin-bottom: 100px; /* Increase the margin between hero section and footer */
   }
+}
+
+/* Confidence Footer */
+.confidence-footer {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.confidence-footer p {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logos img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Make sure there's no overlap in smaller screen sizes */
+@media (max-width: 480px) {
+  .confidence-footer p {
+    font-size: 30px;
+  }
+
+  .logos img {
+    width: 80px; /* Reduce size of logos on very small screens */
+  }
+
+  /* Add more space between hero section and footer */
+  .hero-section {
+    margin-bottom: 300px; /* Increase the margin on very small screens */
+  }
+}

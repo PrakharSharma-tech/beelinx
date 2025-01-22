@@ -15,3 +15,51 @@
   font-size: 1.2rem;
   color: #6b7c8a;
 }
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+  .get-in-touch-container {
+    padding: 30px 20px; /* Reduce padding for smaller screens */
+    height: auto; /* Adjust height dynamically */
+  }
+
+  .get-in-touch-container h1 {
+    font-size: 1.8rem; /* Reduce heading size */
+  }
+
+  .get-in-touch-container p {
+    font-size: 1rem; /* Reduce paragraph size */
+  }
+}
+
+/* Tablet View (481px to 768px) */
+@media (max-width: 768px) {
+  .get-in-touch-container {
+    padding: 40px 30px; /* Slightly reduce padding */
+    height: auto; /* Adjust height dynamically */
+  }
+
+  .get-in-touch-container h1 {
+    font-size: 2rem; /* Slightly smaller heading size */
+  }
+
+  .get-in-touch-container p {
+    font-size: 1.1rem; /* Adjust paragraph size */
+  }
+}
+
+/* Desktop View (769px and above) */
+@media (min-width: 769px) {
+  .get-in-touch-container {
+    padding: 50px 50px; /* Keep original padding */
+    height: 200px; /* Maintain original height */
+  }
+
+  .get-in-touch-container h1 {
+    font-size: 2.5rem; /* Keep original font size */
+  }
+
+  .get-in-touch-container p {
+    font-size: 1.2rem; /* Keep original font size */
+  }
+}

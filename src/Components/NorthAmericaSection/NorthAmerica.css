@@ -1,48 +1,98 @@
 .contact-section {
-    display: flex;
-    justify-content:center;
-    gap: 10px;
-    background-color: #f8e8cfbe;
-    height: 500px;
-    margin-left: 80px;
-    margin-right: 80px;
-    padding: 60px;
-    border-radius: 20px;
-    margin-bottom: 80px;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #f8e8cfbe;
+  height: 500px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 60px;
+  border-radius: 20px;
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  flex: 1;
+}
+
+.right-column {
+  flex: 1;
+  row-gap: 0px;
+}
+
+.region {
+  padding: 20px;
+}
+
+.region h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.region ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.region ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column; /* Stack columns vertically */
+    height: auto; /* Adjust height for content */
+    margin-left: 20px; /* Reduce margins for smaller screens */
+    margin-right: 20px;
+    padding: 30px; /* Adjust padding for better spacing */
   }
-  
-  .left-column {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    flex: 1;
-  }
-  
+
+  .left-column,
   .right-column {
-    flex: 1;
-    row-gap: 0px;
+    flex: unset; /* Remove flex constraints for stacking */
+    width: 100%; /* Take full width */
   }
-  
+
   .region {
-   padding: 20px;
+    padding: 10px; /* Reduce padding for compactness */
   }
-  
+
   .region h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
-    color: #333;
+    font-size: 16px; /* Adjust font size for headings */
   }
-  
-  .region ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
+
   .region ul li {
-    margin-bottom: 8px;
-    font-size: 16px;
-    color: #555;
+    font-size: 14px; /* Adjust font size for list items */
   }
-  
+}
+
+/* Tablet View (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .contact-section {
+    margin-left: 40px; /* Slightly reduce margins */
+    margin-right: 40px;
+    padding: 40px; /* Adjust padding */
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%; /* Ensure full width */
+  }
+
+  .region h3 {
+    font-size: 17px; /* Slightly reduce heading size */
+  }
+
+  .region ul li {
+    font-size: 15px; /* Slightly reduce list item size */
+  }
+}

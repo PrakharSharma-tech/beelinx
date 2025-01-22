@@ -29,19 +29,28 @@ const AddOnFeatures = () => {
   ];
 
   return (
-    <section style={{ backgroundColor: '#F0F8F8', padding: '80px 40px', fontFamily: 'Arial, sans-serif' }}>
+    <section
+      style={{
+        backgroundColor: '#F0F8F8',
+        padding: '80px 20px',
+        fontFamily: 'Arial, sans-serif',
+      }}
+    >
       <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-        <h2 style={{ color: '#1D1D1D', fontWeight: 'bold', marginBottom: '8px' }}>Add-on Features</h2>
+        <h2 style={{ color: '#1D1D1D', fontWeight: 'bold', marginBottom: '8px' }}>
+          Add-on Features
+        </h2>
         <p style={{ color: '#555', fontSize: '16px' }}>
-          An add-on is a set of premium features that you can add to your Beelinx account for an additional fee. Enhance your plan to unlock more value for your team.
+          An add-on is a set of premium features that you can add to your Beelinx account for an additional fee. Enhance
+          your plan to unlock more value for your team.
         </p>
       </div>
       <div
         style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(480px,480px))',
-          gap: '100px',
-           paddingLeft:'250px'
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+          gap: '20px',
+          justifyContent: 'center',
         }}
       >
         {features.map((feature, index) => (
@@ -51,20 +60,45 @@ const AddOnFeatures = () => {
               backgroundColor: '#FFFFFF',
               borderRadius: '8px',
               boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-              padding: '50px',
+              padding: '30px',
             }}
           >
-            <div style={{ display: 'flex', alignItems: 'center', marginBottom: '16px' }}>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                marginBottom: '16px',
+              }}
+            >
               <img
                 src={feature.icon}
                 alt={feature.title}
-                style={{ width: '40px', height: '40px', marginRight: '16px' }}
+                style={{
+                  width: '40px',
+                  height: '40px',
+                  marginRight: '16px',
+                }}
               />
-              <h3 style={{ color: '#1D1D1D', fontWeight: 'bold', fontSize: '30px', margin: 0 }}>
+              <h3
+                style={{
+                  color: '#1D1D1D',
+                  fontWeight: 'bold',
+                  fontSize: '20px',
+                  margin: 0,
+                }}
+              >
                 {feature.title}
               </h3>
             </div>
-            <p style={{ color: '#555', fontSize: '14px', marginBottom: '16px' }}>{feature.description}</p>
+            <p
+              style={{
+                color: '#555',
+                fontSize: '14px',
+                marginBottom: '16px',
+              }}
+            >
+              {feature.description}
+            </p>
             <a
               href={feature.link}
               style={{

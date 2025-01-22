@@ -1,87 +1,174 @@
 .bottom-section {
-    position: relative;
-    background-color: #ffffff;
-    text-align: center;
-    padding: 80px 20px;
-    overflow: hidden;
+  position: relative;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 80px 20px;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.background-image img {
+  /* Adjust size of images */
+  height: auto;
+  width: 300px;
+}
+
+/* Top-left image offset */
+.background-image.top-left {
+  top: 20px;
+  left: 50px;
+}
+
+/* Bottom-right image offset */
+.background-image.bottom-right {
+  bottom: 20px;
+  right: 50px;
+}
+
+.content-container2 {
+  position: relative;
+  z-index: 1;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #6f6c6a;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #232129;
+  margin-bottom: 30px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.try-button {
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+}
+
+.try-button:hover {
+  background-color: #218838;
+}
+
+.contact-button {
+  background-color: #ffffff;
+  color: #0073e6;
+  border: 2px solid #0073e6;
+}
+
+.contact-button:hover {
+  background-color: #f0f8ff;
+}
+
+/* Mobile Responsiveness (max-width: 480px) */
+@media (max-width: 480px) {
+  .bottom-section {
+    padding: 40px 15px; /* Adjust padding for mobile */
   }
-  
-  .background-image {
-    position: absolute;
-    z-index: 0;
-    pointer-events: none;
-    
-  }
-  
+
   .background-image img {
-    /* Adjust size of images */
-    height: auto;
-    width: 300px;
+    width: 150px; /* Adjust background image size for mobile */
   }
-  
-  /* Top-left image offset */
+
+  /* Adjust position for smaller screens */
   .background-image.top-left {
-    top: 20px;
-    left: 50px;
+    top: 10px;
+    left: 10px;
   }
-  
-  /* Bottom-right image offset */
+
   .background-image.bottom-right {
-    bottom: 20px;
-    right: 50px;
+    bottom: 10px;
+    right: 10px;
   }
-  
+
   .content-container2 {
-    position: relative;
-    z-index: 1;
+    padding: 0 10px; /* Add some padding to content */
   }
-  
+
   .subtitle {
-    font-size: 16px;
-    color: #6f6c6a;
-    margin-bottom: 20px;
-    font-weight: 600;
+    font-size: 14px; /* Adjust subtitle font size for mobile */
   }
-  
+
   .title {
-    font-size: 20px;
-    font-weight: 700;
-    color: #232129;
-    margin-bottom: 30px;
+    font-size: 18px; /* Adjust title font size for mobile */
   }
-  
+
   .buttons-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column; /* Stack buttons vertically for mobile */
+    gap: 15px; /* Space out buttons */
   }
-  
+
   .button {
-    font-size: 16px;
-    font-weight: 600;
-    padding: 12px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
+    font-size: 14px; /* Adjust button font size for mobile */
+    padding: 10px 20px; /* Adjust padding for mobile buttons */
   }
-  
-  .try-button {
-    background-color: #28a745;
-    color: #ffffff;
-    border: none;
+}
+
+/* Tablet Responsiveness (max-width: 768px) */
+@media (max-width: 768px) {
+  .bottom-section {
+    padding: 60px 15px; /* Adjust padding for tablets */
   }
-  
-  .try-button:hover {
-    background-color: #218838;
+
+  .background-image img {
+    width: 200px; /* Adjust background image size for tablets */
   }
-  
-  .contact-button {
-    background-color: #ffffff;
-    color: #0073e6;
-    border: 2px solid #0073e6;
+
+  /* Adjust position for tablets */
+  .background-image.top-left {
+    top: 15px;
+    left: 30px;
   }
-  
-  .contact-button:hover {
-    background-color: #f0f8ff;
+
+  .background-image.bottom-right {
+    bottom: 15px;
+    right: 30px;
   }
-  
+
+  .content-container2 {
+    padding: 0 20px; /* Adjust padding for content */
+  }
+
+  .subtitle {
+    font-size: 15px; /* Adjust subtitle font size for tablets */
+  }
+
+  .title {
+    font-size: 19px; /* Adjust title font size for tablets */
+  }
+
+  .buttons-container {
+    gap: 18px; /* Adjust gap for tablets */
+  }
+
+  .button {
+    font-size: 15px; /* Adjust button font size for tablets */
+    padding: 11px 20px; /* Adjust padding for tablet buttons */
+  }
+}
+
+/* No changes for large devices and desktop screens */

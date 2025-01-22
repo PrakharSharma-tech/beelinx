@@ -1,135 +1,232 @@
-.hero-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    background-color: #ffffff;
-    color: #000000;
-    font-family: Arial, sans-serif;
-    height:500px;
+.hero-section-bcs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  height: 500px;
+}
+
+.hero-content-bcs {
+  max-width: 50%;
+  text-align: left;
+}
+
+.hero-content-bcs h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: left;
+  text-align: left;
+}
+
+.hero-content-bcs h1 span {
+  color: #43d382;
+  text-decoration: underline;
+  text-align: left;
+}
+
+.hero-content-bcs ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.hero-content-bcs ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.hero-buttons-bcs {
+  display: flex;
+  gap: 20px;
+
+}
+
+.try-button-bcs,
+.contact-button-bcs {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  justify-content: left;
+}
+
+.try-button-bcs {
+  background-color: #43d382;
+  color: #fff;
+  justify-content: left;
+}
+
+.contact-button-bcs {
+  background-color: transparent;
+  color: #43d382;
+  border: 1px solid #43d382;
+  justify-content: left;
+}
+
+.hero-image-bcs {
+  position: relative;
+  width: 45%;
+}
+
+.hero-image-bcs img.main-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.progress-overlay {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progress-card {
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.progress-card .progress-bar {
+  background-color: #ddd;
+  height: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #43d382;
+  border-radius: 5px;
+}
+
+.low-risk {
+  color: #43d382;
+}
+
+.medium-risk {
+  color: #f5a623;
+}
+
+.resource-capacity {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.resource-capacity .bars {
+  display: flex;
+  gap: 5px;
+}
+
+.resource-capacity .bars div {
+  background-color: #43d382;
+  width: 20px;
+}
+
+.overlay-image {
+  position: absolute;
+  left: 3%; /* Adjust positioning */
+  width: 550px; /* Adjust size as needed */
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive for screens with width <= 768px */
+@media (max-width: 768px) {
+  .hero-section-bcs {
+    flex-direction: column;
+    padding: 30px;
+    height: 600px;
+    margin-bottom: 100px;
   }
-  
-  .hero-content {
-    max-width: 50%;
+
+  .hero-content-bcs {
+    max-width: 100%;
+    text-align: center;
   }
-  
-  .hero-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+
+  .hero-content-bcs h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
   }
-  
-  .hero-content h1 span {
-    color: #43d382;
-    text-decoration: underline;
-  }
-  
-  .hero-content ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-  }
-  
-  .hero-content ul li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-  
-  .hero-buttons {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .try-button,
-  .contact-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+
+  .hero-content-bcs ul li {
     font-size: 1rem;
-    cursor: pointer;
   }
-  
-  .try-button {
-    background-color: #43d382;
-    color: #fff;
-  }
-  
-  .contact-button {
-    background-color: transparent;
-    color: #43d382;
-    border: 1px solid #43d382;
-  }
-  
-  .hero-image {
-    position: relative;
-    width: 45%;
-  }
-  
-  .hero-image img.main-image {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .progress-overlay {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    display: flex;
+
+  .hero-buttons-bcs {
     flex-direction: column;
     gap: 10px;
   }
-  
-  .progress-card {
-    background-color: #fff;
-    color: #000;
-    padding: 10px;
-    border-radius: 5px;
+
+  .hero-image-bcs {
+    width: 100%;
+    margin-top: 20px;
   }
-  
-  .progress-card .progress-bar {
-    background-color: #ddd;
-    height: 5px;
-    border-radius: 5px;
-    margin-top: 5px;
+
+  .hero-image-bcs img.main-image {
+    width: 80%;
+    margin: 0 auto;
   }
-  
-  .progress-bar-fill {
-    height: 100%;
-    background-color: #43d382;
-    border-radius: 5px;
+}
+
+/* Responsive for screens with width <= 480px */
+@media (max-width: 480px) {
+  .hero-section-bcs {
+    flex-direction: column;
+    padding: 20px;
+    height: 600px;
+    margin-bottom: 100px;
   }
-  
-  .low-risk {
-    color: #43d382;
+
+  .hero-content-bcs {
+    max-width: 100%;
+    text-align: center;
   }
-  
-  .medium-risk {
-    color: #f5a623;
+
+  .hero-content-bcs h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
   }
-  
-  .resource-capacity {
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    background-color: #fff;
-    color: #000;
-    padding: 10px;
-    border-radius: 5px;
+
+  .hero-content-bcs ul li {
+    font-size: 0.9rem;
   }
-  
-  .resource-capacity .bars {
-    display: flex;
-    gap: 5px;
+
+  .hero-buttons-bcs {
+    flex-direction: column;
+    gap: 10px;
   }
-  
-  .resource-capacity .bars div {
-    background-color: #43d382;
-    width: 20px;
+
+  .try-button-bcs,
+  .contact-button-bcs {
+    padding: 8px 15px;
+    font-size: 0.9rem;
   }
-  .overlay-image {
-    position: absolute;
-    
-    left: 3%; /* Adjust positioning */
-    width: 550px; /* Adjust size as needed */
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+  .hero-image-bcs {
+    width: 100%;
+    margin-top: 20px;
   }
+
+  .hero-image-bcs img.main-image {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .overlay-image-bcs {
+    width: 300px;
+    left: 5%;
+  }
+}

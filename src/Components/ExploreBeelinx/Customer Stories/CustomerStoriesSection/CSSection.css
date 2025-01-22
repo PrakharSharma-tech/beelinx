@@ -102,3 +102,93 @@
   font-weight: 500;
   line-height: 1.4;
 }
+
+/* Mobile Responsiveness (max-width: 480px) */
+@media (max-width: 480px) {
+  .stories-container {
+    padding: 20px 10px; /* Adjust padding for small screens */
+  }
+
+  .stories-layout {
+    flex-direction: column; /* Stack filter and stories layout vertically */
+  }
+
+  .filter-section {
+    width: 100%; /* Full width for filter on mobile */
+    max-height: none; /* Remove max height */
+    margin-bottom: 20px; /* Add space between filter and stories */
+  }
+
+  .stories-grid {
+    grid-template-columns: 1fr; /* Single column grid on mobile */
+  }
+
+  .story-card {
+    width: 100%; /* Full width for cards on mobile */
+    height: auto; /* Auto height to maintain aspect ratio */
+  }
+
+  .story-image {
+    height: 160px; /* Adjust image size on mobile */
+  }
+}
+
+/* Tablet Responsiveness (max-width: 768px) */
+@media (max-width: 768px) {
+  .stories-container {
+    padding: 40px 15px; /* Adjust padding for tablets */
+  }
+
+  .stories-layout {
+    flex-direction: column; /* Stack filter and stories layout vertically */
+  }
+
+  .filter-section {
+    width: 100%; /* Full width for filter on tablets */
+    margin-bottom: 20px; /* Add space between filter and stories */
+  }
+
+  .stories-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns grid on tablets */
+  }
+
+  .story-card {
+    width: 100%; /* Full width for cards on tablets */
+    height: auto; /* Auto height to maintain aspect ratio */
+  }
+
+  .story-image {
+    height: 180px; /* Adjust image size on tablets */
+  }
+}
+
+/* Medium Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .stories-container {
+    padding: 50px 15px; /* Adjust padding for medium devices */
+  }
+
+  .stories-layout {
+    flex-direction: column; /* Stack filter and stories layout vertically */
+  }
+
+  .filter-section {
+    width: 100%; /* Full width for filter on medium devices */
+    margin-bottom: 20px; /* Add space between filter and stories */
+  }
+
+  .stories-grid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns grid on medium screens */
+  }
+
+  .story-card {
+    width: 100%; /* Full width for cards on medium screens */
+    height: auto; /* Auto height to maintain aspect ratio */
+  }
+
+  .story-image {
+    height: 180px; /* Adjust image size on medium screens */
+  }
+}
+
+/* No changes for large devices and desktop screens */

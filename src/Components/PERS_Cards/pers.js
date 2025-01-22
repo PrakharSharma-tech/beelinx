@@ -33,9 +33,9 @@ const EnterpriseSolutions = () => {
       <h2 className="enterprise-heading">
         Powerful enterprise-ready solutions
       </h2>
-      <p style={{ width: "1400px", paddingBottom: "50px", paddingLeft: "80px" }}>
+      {/* <p style={{ width: "1400px", paddingBottom: "50px", paddingLeft: "80px" }}>
         Beelinx is the all-in-one platform that allows teams to scale smoothly with global support, industry-leading security, and a wealth of resources to help teams tackle complex work.Get expert help anytime with round-the-clock support designed for enterprise clients.support designed for enterprise clients
-      </p>
+      </p> */}
       <div className="enterprise-cards">
         {cards.map((card, index) => (
           <div key={index} className="enterprise-card">

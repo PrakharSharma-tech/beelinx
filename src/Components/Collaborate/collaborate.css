@@ -1,71 +1,181 @@
 .collaborate-section {
-    background-color: #1e1e2f; /* Dark background */
-    color: #ffffff; /* White text */
-    text-align: center;
-    padding: 60px 60px;
-    border-radius: 8px;
-    align-items: left;
+  background-color: #1e1e2f; /* Dark background */
+  color: #ffffff; /* White text */
+  text-align: center;
+  padding: 60px 60px;
+  border-radius: 8px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.collaborate-heading {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.collaborate-subtext {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #d3d3d3; /* Light gray for subtext */
+  text-align: left;
+  max-width: 100%; /* Ensure it scales down on smaller screens */
+}
+
+.collaborate-stats {
+  display: flex;
+  justify-content: left;
+  gap: 300px; /* Keep original gap for desktop */
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.stat {
+  text-align: left;
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  color: #4caf50; /* Green color for emphasis */
+  margin-bottom: 5px;
+}
+
+.stat p {
+  font-size: 1rem;
+  color: #d3d3d3;
+}
+
+.collaborate-btn {
+  background-color: #4caf50; /* Green button */
+  color: #ffffff;
+  border: none;
+  padding: 20px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.collaborate-btn:hover {
+  background-color: #43a047; /* Slightly darker green on hover */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small Mobile Screens (up to 480px) */
+@media screen and (max-width: 480px) {
+  .collaborate-section {
+    padding: 20px; /* Reduce padding */
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .collaborate-heading {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .collaborate-subtext {
+    font-size: 1rem; /* Reduce font size */
+    text-align: left;
+    max-width: 100%; /* Fit content */
+  }
+
+  .collaborate-stats {
+    flex-direction: column; /* Stack stats vertically */
+    gap: 20px; /* Reduce spacing between stats */
+  }
+
+  .stat {
+    margin-bottom: 15px; /* Add spacing for vertical layout */
+  }
+
+  .stat h3 {
+    font-size: 2rem; /* Adjust stat heading size */
+  }
+
+  .stat p {
+    font-size: 0.9rem; /* Adjust stat description size */
+  }
+
+  .collaborate-btn {
+    padding: 15px; /* Adjust button padding */
+    font-size: 0.9rem; /* Adjust button font size */
+  }
+}
+
+/* Tablet Screens (481px to 768px) */
+@media screen and (max-width: 768px) {
+  .collaborate-section {
+    padding: 40px; /* Slightly reduce padding */
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .collaborate-heading {
+    font-size: 1.8rem; /* Slightly reduce heading size */
+  }
+
+  .collaborate-subtext {
+    font-size: 1rem; /* Adjust font size */
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .collaborate-stats {
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 40px; /* Reduce spacing between stats */
+  }
+
+  .stat {
+    flex: 1 1 calc(50% - 20px); /* Two columns on tablet screens */
+    margin-bottom: 20px;
+  }
+
+  .stat h3 {
+    font-size: 2.2rem; /* Slightly reduce size */
+  }
+
+  .stat p {
+    font-size: 1rem;
+  }
+
+  .collaborate-btn {
+    padding: 18px; /* Adjust button padding */
+    font-size: 1rem; /* Keep font size consistent */
+  }
+}
+
+/* Desktop Screens (769px and above) */
+@media screen and (min-width: 769px) {
+  .collaborate-section {
     margin-left: 80px;
     margin-right: 80px;
-    
   }
-  
+
   .collaborate-heading {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    font-weight: bold;
-    align-items: left;
-    text-align: left;
-   
+    font-size: 2rem; /* Keep original heading size */
   }
-  
+
   .collaborate-subtext {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    color: #d3d3d3; /* Light gray for subtext */
-    align-items: left;
-    text-align: left;
-    width: 1200px;
+    font-size: 1.1rem; /* Keep original font size */
   }
-  
+
   .collaborate-stats {
     display: flex;
     justify-content: left;
-    gap: 300px;
-    margin-bottom: 60px;
-    text-align: left;
-    margin-top: 60px;
+    gap: 300px; /* Maintain original spacing */
   }
-  
+
   .stat {
-    text-align: left;
+    flex: none; /* Keep stats as they are */
   }
-  
+
   .stat h3 {
-    font-size: 2.5rem;
-    color: #4caf50; /* Green color for emphasis */
-    margin-bottom: 5px;
-    text-align: left;
-    align-items: left;
+    font-size: 2.5rem; /* Maintain original size */
   }
-  
+
   .stat p {
-    font-size: 1rem;
-    color: #d3d3d3;
+    font-size: 1rem; /* Maintain original size */
   }
-  
-  .collaborate-btn {
-    background-color: #4caf50; /* Green button */
-    color: #ffffff;
-    border: none;
-    padding: 20px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .collaborate-btn:hover {
-    background-color: #43a047; /* Slightly darker green on hover */
-  }
-  
+}

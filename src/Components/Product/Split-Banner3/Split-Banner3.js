@@ -26,7 +26,7 @@ const SplitBanner3 = () => {
         <div className="video-container5">
           {/* Replace the URL below with your desired video URL */}
           <iframe
-            src="Product-Split-banner1.mp4"
+            src="Product-Split-Banner1.mp4"
             title="Product Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

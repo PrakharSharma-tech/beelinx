@@ -11,7 +11,7 @@ const MeetThePlatform = () => {
         </p>
       </div>
       <div className="platform-features">
-        <div t   className="feature">
+        <div className="feature">
           <img
             src="MeetThePlatform1.svg"
             alt="Work your way"

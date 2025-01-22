@@ -1,4 +1,4 @@
-import React, { useState, useEffect, menuRef,useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Nav.css"; // Import styles
 import "@fortawesome/fontawesome-free/css/all.min.css"; 
 const Navbar = () => {
@@ -67,14 +67,9 @@ const Navbar = () => {
                       onClick={() => setActiveSubNav("marketing")}
                       
                     >
-                      Marketing Teams-
+                      Beelinx Solutions
                     </li>
-                    <li
-                      className={`sub-nav-link ${activeSubNav === "creative" ? "active" : ""}`}
-                      onClick={() => setActiveSubNav("creative")}
-                    >
-                      Creative Teams-
-                    </li>
+                    
                     
                   </ul>
                 </div>
@@ -139,55 +134,55 @@ const Navbar = () => {
                         </ul>
                       </div>
                       <div className="mega-menu-column">
-                        <h3>Marketing Analytics</h3>
+                        <h3>Beelinx Solutions</h3>
                         <ul>
                           <li>
                             <i className="fas fa-chart-line"></i>{" "}
-                            <a href="#">Performance Metrics</a>
+                            <a href="sds">Software Development Services</a>
                           </li>
                           <li>
                             <i className="fas fa-users"></i>{" "}
-                            <a href="#">Customer Insights</a>
+                            <a href="solutionsms">Software Maintenance and Suppor</a>
                           </li>
                           <li>
                             <i className="fas fa-chart-pie"></i>{" "}
-                            <a href="#">Lead Tracking</a>
+                            <a href="sci">Software Customization and Integration</a>
                           </li>
                           <li>
                             <i className="fas fa-chart-line"></i>{" "}
-                            <a href="#">Performance Metrics</a>
+                            <a href="ste">Software Training and Education</a>
                           </li>
                           <li>
                             <i className="fas fa-users"></i>{" "}
-                            <a href="#">Customer Insights</a>
+                            <a href="saas">Software as a Service (SaaS)</a>
                           </li>
                           <li>
                             <i className="fas fa-chart-pie"></i>{" "}
-                            <a href="#">Lead Tracking</a>
+                            <a href="cps">Consulting Professional Services</a>
                           </li>
                           <li>
                             <i className="fas fa-chart-line"></i>{" "}
-                            <a href="#">Performance Metrics</a>
+                            <a href="osa">Outsourcing and Staff Augmentation</a>
                           </li>
                           <li>
                             <i className="fas fa-users"></i>{" "}
-                            <a href="#">Customer Insights</a>
+                            <a href="pac">Partnership and Collaboration</a>
                           </li>
                           <li>
                             <i className="fas fa-chart-pie"></i>{" "}
-                            <a href="#">Lead Tracking</a>
+                            <a href="adi">API Design and Implementation</a>
                           </li>
                           <li>
                             <i className="fas fa-chart-line"></i>{" "}
-                            <a href="#">Performance Metrics</a>
+                            <a href="adm">API Development and Management</a>
                           </li>
                           <li>
                             <i className="fas fa-users"></i>{" "}
-                            <a href="#">Customer Insights</a>
+                            <a href="ati">API Testing and Integration</a>
                           </li>
                           <li>
                             <i className="fas fa-users"></i>{" "}
-                            <a href="#">Customer Insights</a>
+                            <a href="cas">Custom API Solutions</a>
                           </li>
                           <li>
                             <i className="fas fa-chart-pie"></i>{" "}
@@ -206,128 +201,7 @@ const Navbar = () => {
                       </div>
                     </>
                   )}
-                  {activeSubNav === "creative" && (
-                    <>
-                      <div className="mega-menu-column">
-                        <h3>Creative Teams</h3>
-                        <ul>
-                        <li>
-                            <i className="fas fa-bullhorn"></i>{" "}
-                            <a href="#">Campaign Management</a>
-                            <p style={{fontSize:"12px"}}>Streamline Proofing and reporting for seamless campaigns</p>
-                          </li>
-                          <li>
-                            <i className="fas fa-share-alt"></i>{" "}
-                            <a href="#">Social Media</a>
-                            <p style={{fontSize:"12px"}}>Streamline Proofing and reporting for seamless campaigns & marketing reporting </p>
-                          </li>
-                          <li>
-                            <i className="fas fa-ad"></i>{" "}
-                            <a href="#">Advertising</a>
-                            <p style={{fontSize:"12px"}}>Streamline Proofing and reporting for seamless campaigns</p>
-                          </li>
-                          <li>
-                            <i className="fas fa-pencil-alt"></i>{" "}
-                            <a href="#">Design Collaboration</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-palette"></i>{" "}
-                            <a href="#">Brand Management</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-archive"></i>{" "}
-                            <a href="#">Asset Tracking</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-pencil-alt"></i>{" "}
-                            <a href="#">Design Collaboration</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-palette"></i>{" "}
-                            <a href="#">Brand Management</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-archive"></i>{" "}
-                            <a href="#">Asset Tracking</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-pencil-alt"></i>{" "}
-                            <a href="#">Design Collaboration</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-pencil-alt"></i>{" "}
-                            <a href="#">Design Collaboration</a>
-                          </li>
-                          <button>Try Beelinx for free</button>
-                        </ul>
-                      </div>
-                      <div className="mega-menu-column">
-                        <h3>Creative Workflows</h3>
-                        <ul>
-                          <li>
-                            <i className="fas fa-cogs"></i>{" "}
-                            <a href="#">Visual Prototyping</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-check-circle"></i>{" "}
-                            <a href="#">Review & Approval</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-truck"></i>{" "}
-                            <a href="#">Content Delivery</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-cogs"></i>{" "}
-                            <a href="#">Visual Prototyping</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-check-circle"></i>{" "}
-                            <a href="#">Review & Approval</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-truck"></i>{" "}
-                            <a href="#">Content Delivery</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-cogs"></i>{" "}
-                            <a href="#">Visual Prototyping</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-check-circle"></i>{" "}
-                            <a href="#">Review & Approval</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-truck"></i>{" "}
-                            <a href="#">Content Delivery</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-check-circle"></i>{" "}
-                            <a href="#">Review & Approval</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-truck"></i>{" "}
-                            <a href="#">Content Delivery</a>
-                          </li><li>
-                            <i className="fas fa-palette"></i>{" "}
-                            <a href="#">Brand Management</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-archive"></i>{" "}
-                            <a href="#">Asset Tracking</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-pencil-alt"></i>{" "}
-                            <a href="#">Design Collaboration</a>
-                          </li>
-                          <li>
-                            <i className="fas fa-pencil-alt"></i>{" "}
-                            <a href="#">Design Collaboration</a>
-                          </li>
-                          <button>Contact Sales</button>
-                        </ul>
-                      </div>
-                    </>
-                  )}
+                  
                   <div className="mega-menu-column">
                     <h3>Project Management</h3>
                     <ul>
@@ -385,69 +259,68 @@ const Navbar = () => {
             {dropdown === "product" && (
               <div className="mega-menu" ref={menuRef}>
                 <div className="mega-menu-column">
-                  <h3>Features</h3>
+                  <h3>Beelinx Products</h3>
                   <ul>
                   <li>
-                            <i className="fas fa-bullhorn"></i>{" "}
-                            <a href="#">Campaign Management</a>
+                            <i className="fas fa-chart-line"></i>{" "}
+                            <a href="ams"> API Management Software</a>
                           </li>
                           <li>
-                            <i className="fas fa-share-alt"></i>{" "}
-                            <a href="#">Social Media</a>
+                            <i className="fas fa-users"></i>{" "}
+                            <a href="trs"> Transaction Reconciliation Software</a>
                           </li>
                           <li>
-                            <i className="fas fa-ad"></i>{" "}
-                            <a href="#">Advertising</a>
+                            <i className="fas fa-chart-pie"></i>{" "}
+                            <a href="cms"> Chargeback Management Software</a>
                           </li>
                           <li>
-                            <i className="fas fa-bullhorn"></i>{" "}
-                            <a href="#">Campaign Management</a>
+                            <i className="fas fa-chart-line"></i>{" "}
+                            <a href="crm">CRM Software</a>
                           </li>
                           <li>
-                            <i className="fas fa-share-alt"></i>{" "}
-                            <a href="#">Social Media</a>
+                            <i className="fas fa-users"></i>{" "}
+                            <a href="pos">Retail POS Softwares</a>
                           </li>
                           <li>
-                            <i className="fas fa-ad"></i>{" "}
-                            <a href="#">Advertising</a>
+                            <i className="fas fa-chart-pie"></i>{" "}
+                            <a href="pms"> Payin Management Software</a>
                           </li>
                           <li>
-                            <i className="fas fa-bullhorn"></i>{" "}
-                            <a href="#">Campaign Management</a>
+                            <i className="fas fa-chart-line"></i>{" "}
+                            <a href="payoutms"> Payout Management Software</a>
                           </li>
                           <li>
-                            <i className="fas fa-share-alt"></i>{" "}
-                            <a href="#">Social Media</a>
+                            <i className="fas fa-users"></i>{" "}
+                            <a href="lms"> Loan Management Software</a>
                           </li>
                           <li>
-                            <i className="fas fa-ad"></i>{" "}
-                            <a href="#">Advertising</a>
+                            <i className="fas fa-chart-pie"></i>{" "}
+                            <a href="erp"> ERP Software</a>
                           </li>
                           <li>
-                            <i className="fas fa-bullhorn"></i>{" "}
-                            <a href="#">Campaign Management</a>
+                            <i className="fas fa-chart-line"></i>{" "}
+                            <a href="hms"> Hospital Management Software</a>
                           </li>
                           <li>
-                            <i className="fas fa-share-alt"></i>{" "}
-                            <a href="#">Social Media</a>
+                            <i className="fas fa-users"></i>{" "}
+                            <a href="sms">School Management Software</a>
                           </li>
                           <li>
-                            <i className="fas fa-bullhorn"></i>{" "}
-                            <a href="#">Campaign Management</a>
+                            <i className="fas fa-users"></i>{" "}
+                            <a href="csms"> Cooperative Society Management Software</a>
                           </li>
                           <li>
-                            <i className="fas fa-share-alt"></i>{" "}
-                            <a href="#">Social Media</a>
+                            <i className="fas fa-chart-pie"></i>{" "}
+                            <a href="#">Lead Tracking</a>
                           </li>
                           <li>
-                            <i className="fas fa-ad"></i>{" "}
-                            <a href="#">Advertising</a>
+                            <i className="fas fa-chart-line"></i>{" "}
+                            <a href="#">Performance Metrics</a>
                           </li>
                           <li>
-                            <i className="fas fa-bullhorn"></i>{" "}
-                            <a href="#">Campaign Management</a>
+                            <i className="fas fa-users"></i>{" "}
+                            <a href="#">Customer Insights</a>
                           </li>
-                          
 
                     <button>Try Beelinx for free</button>
                   </ul>

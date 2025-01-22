@@ -59,10 +59,10 @@ const Footer = () => {
               <li><a href="#sales">+91 10012662622</a></li>
               <li><a href="#support">Email-</a></li>
               <li><a href="#sales">support@beelinx.in</a></li>
-              <li><a href="#support">Physical</a></li>
+              {/* <li><a href="#support">Physical</a></li> */}
               <li><a href="#sales">Address-</a></li>
-              <li><a href="#support">B-91,</a></li>
-              <li><a href="#sales">Sector 66</a></li>
+              <li><a href="#support">B-91,Sector 63</a></li>
+              {/* <li><a href="#sales"></a></li> */}
               <li><a href="#support">Noida , UP</a></li>
               
             </ul>

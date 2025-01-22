@@ -1,0 +1,31 @@
+.notification-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00796b; /* Teal background */
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  
+  .notification-icon {
+    margin-right: 8px;
+    font-size: 16px; /* Adjust size of the icon */
+  }
+  
+  .notification-text {
+    flex: 1; /* Allows the text to stretch if needed */
+    text-align: center;
+  }
+  
+  .notification-link {
+    color: #ffffff; /* White link */
+    text-decoration: underline; /* Underlined */
+    font-weight: bold;
+  }
+  
+  .notification-link:hover {
+    color: #d4f1f4; /* Lighter color on hover */
+  }
+  

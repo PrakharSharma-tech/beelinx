@@ -4,7 +4,7 @@ import HeroSection from "../../ExploreBeelinx/TakeAProductTour/Hero/Hero";
 import IntegrationsSection from "../../ExploreBeelinx/TakeAProductTour/Clients/Clients-Tour";
 import BeelinxBannerTour from "../../ExploreBeelinx/TakeAProductTour/Split-Banner1/Split-Banner1-tour";
 import SplitBanner2Tour from "../../ExploreBeelinx/TakeAProductTour/Split-Banner2/Split-banner2-tour";
-import SplitBanner3Tour from "../../ExploreBeelinx/TakeAProductTour/Split-Banner3/Split-Banner3-tour";
+
 import CardsAndBadge from "../../ExploreBeelinx/TakeAProductTour/CardsAndBadge/CardsAndBadge";
 import BottomSection from "../../ExploreBeelinx/TakeAProductTour/BottomSection/BottomSection";
 

@@ -19,7 +19,7 @@ const TerminalImageSection = () => {
         <h1 className="title">
         Ready to see Beelinx for yourself?
         </h1>
-        <p style={{padding:"20px",content: "\A"}}>We’d love to show you how Beelinx can help your team do more of their best work. Fill out the form and we’ll be in touch within 24 hours.</p>
+        <p style={{padding:"20px"}}>We’d love to show you how Beelinx can help your team do more of their best work. Fill out the form and we’ll be in touch within 24 hours.</p>
         <div className="buttons-container">
           <button className="button try-button">Try Beelinx for free</button>
           <button className="button contact-button">Contact us</button>
