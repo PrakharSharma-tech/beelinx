@@ -111,4 +111,67 @@ padding: 0;
   .cta-button.secondary:hover {
     background-color: #f0fdfd;
   }
-  
+  /* Mobile view adjustments */
+@media (max-width: 1024px) {
+  .accordion-and-image {
+      flex-direction: column !important; /* Stack accordion and image vertically */
+      align-items: center; /* Ensure items are centered */
+      height: auto; /* Allow height to adjust dynamically */
+  }
+
+  .accordion {
+      flex: 1 1 100%; /* Accordion takes full width */
+      max-width: 100%; /* Ensure it doesn't exceed the screen width */
+  }
+
+  .image-container {
+      order: 1; /* Ensure image comes below the accordion */
+      margin-top: 20px; /* Space between accordion and image */
+      max-width: 100%; /* Ensure the image container doesn't exceed screen width */
+  }
+
+  .image-container img {
+      width: 100%; /* Make the image responsive */
+      max-width: 700px; /* Maintain maximum image width */
+  }
+
+  .cta-buttons {
+      margin-top: 20px; /* Space the buttons below the image */
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .image-container {
+      margin-top: 30px; /* Increase space between accordion and image */
+  }
+
+  .image-container img {
+      width: 100%; /* Ensure the image stretches to full width */
+      max-width: 100%; /* Prevent overflow */
+  }
+}
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .accordion-and-image {
+    flex-direction: column !important; /* Stack accordion and image vertically */
+    height: auto; /* Adjust height based on content */
+  }
+
+  .accordion {
+    flex: 1 1 100%; /* Accordion takes full width */
+    max-width: 100%; /* Ensure full width on smaller screens */
+  }
+
+  .image-container {
+    order: 2; /* Ensure image appears below the accordion */
+    margin-top: 20px; /* Add space between accordion and image */
+    flex-basis: 100%; /* Ensure the image container takes full width */
+    max-width: 100%; /* Ensure image container does not exceed the screen width */
+  }
+
+  .image-container img {
+    width: 100%; /* Ensure image takes full container width */
+    max-width: 700px; /* Maintain a maximum width */
+  }
+}

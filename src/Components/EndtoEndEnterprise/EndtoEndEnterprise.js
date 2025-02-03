@@ -7,13 +7,17 @@ const Container = styled.div`
   padding: 40px;
   color: #121330;
   text-align: center;
-  margin-top: 40px; // Default margin for larger screens
+  margin-top: 20px; // Default margin for larger screens
 
-  @media (max-width: 768px) {
-    margin-top: 600px; // Apply 600px margin-top for smaller screens
+   @media (max-width: 768px) {
+    margin-top: 300px; // Apply 600px margin-top for smaller screens
     padding: 20px;
   }
 
+  @media (max-width: 1024px) {
+    margin-top: 350px; // Apply 600px margin-top for smaller screens
+    padding: 20px;
+  }
   @media (max-width: 576px) {
     margin-top: 600px; // Maintain 600px margin for very small screens
     padding: 10px;

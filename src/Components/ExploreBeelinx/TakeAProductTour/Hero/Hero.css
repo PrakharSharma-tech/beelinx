@@ -113,4 +113,21 @@
       width: 100%;
     }
   }
+  @media (max-width: 1024px) {
+    .hero-container-tour {
+      flex-direction: column;
+    }
+  
+    .hero-image-tour {
+      display: none; /* Hide images on smaller screens */
+    }
+  
+    .hero-title-tour {
+      font-size: 2rem;
+    }
+  
+    .hero-input-tour {
+      width: 100%;
+    }
+  }
   

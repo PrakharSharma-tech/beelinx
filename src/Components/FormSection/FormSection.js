@@ -18,6 +18,8 @@ const FormSectionContainer = styled.div`
     flex-direction: column;
     gap: 15px;
     padding: 10px;
+
+   
   }
 
   @media (max-width: 600px) {
@@ -53,6 +55,10 @@ const FormSectionLeft = styled.div`
   @media (max-width: 480px) {
     text-align: center;
     max-width: 100%;
+    img {
+    margin-left: -50px; /* Shift image to the left */
+    width:400px;
+  }
   }
 `;
 

@@ -1,3 +1,4 @@
+/* Base Styles */
 .carousel {
   display: flex;
   position: relative;
@@ -29,6 +30,7 @@
 
 .text-section {
   max-width: 50%;
+  text-align: left; /* Default text alignment */
 }
 
 .text-section h2 {
@@ -121,8 +123,8 @@ blockquote {
 
   .text-section {
     max-width: 100%; /* Full width text section */
-    text-align: center;
     margin-bottom: 20px; /* Space between text and image */
+    text-align: left !important; /* Override alignment for smaller screens */
   }
 
   .text-section h2 {
@@ -147,7 +149,7 @@ blockquote {
 
   .actions {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Align buttons to the left */
     gap: 0.5rem;
   }
 
@@ -173,7 +175,7 @@ blockquote {
   .text-section {
     max-width: 100%; /* Full width text */
     padding: 10px; /* Adjust padding */
-    text-align: center;
+    text-align: left !important; /* Left align text */
   }
 
   .text-section h2 {
@@ -199,7 +201,7 @@ blockquote {
 
   .actions {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Align buttons to the left */
     gap: 0.5rem;
   }
 
@@ -215,7 +217,6 @@ blockquote {
 }
 
 /* Small Mobile (Max 480px) */
-/* Small Mobile (Max 480px) */
 @media (max-width: 480px) {
   .carousel {
     margin: 0 10px; /* Add some breathing room on sides */
@@ -224,8 +225,8 @@ blockquote {
 
   .text-section {
     padding: 10px; /* Avoid overlapping content */
-    text-align: center;
-    word-wrap: break-word; /* Prevent text overflow */
+    text-align: left  !important; /* Left align text */
+    word-wrap: break-word !important; /* Prevent text overflow */
   }
 
   .text-section h2 {
@@ -265,7 +266,7 @@ blockquote {
 
   .actions {
     flex-direction: column;
+    align-items: flex-start; /* Align buttons to the left */
     gap: 0.75rem; /* Add more spacing for touch comfort */
   }
 }
-

@@ -1,76 +1,132 @@
 .tab-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    height: relative;
-    
-  }
-  
-  .tabs {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .tab-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    background-color: #f0f0f0;
-    cursor: pointer;
-    border-radius: 5px;
-    margin: 0 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .tab-button.active {
-    background-color: #08cf65; /* Dark Bottle Green */
-    color: #fff;
-  }
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px; /* Slight margin for better spacing on small screens */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-button.active {
+  background-color: #08cf65; /* Dark Bottle Green */
+  color: #fff;
+}
+
+.tab-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensure the text and image stack properly */
+}
+
+.text-content {
+  flex: 1;
+  color: black;
+}
+
+.image-content {
+  flex: 1;
+  color: black;
+}
+
+.image-content img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.learn-more-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #006400; /* Dark Bottle Green */
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 30px;
+}
+
+.learn-more-link:hover {
+  color: #004d00; /* Slightly darker green */
+}
+
+/* Media Query for Tablets (768px and below) */
+@media (max-width: 768px) {
   .tab-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column !important;; /* Stack the content vertically */
     gap: 20px;
   }
-  
-  .text-content {
-    flex: 1;
-    color: black;
+
+  .content {
+    flex-direction: column !important; /* Stack text and image vertically */
+    gap: 15px;
   }
-  
-  .image-content {
-    flex: 1;
-    color: black;
+
+  .text-content, .image-content {
+    flex: unset; /* Remove equal spacing constraints */
+    width: 100%; /* Make them take full width */
   }
-  
+
   .image-content img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-    height: 400px;
+    max-width: 100%; /* Ensure image scales properly */
+    height: auto; /* Maintain aspect ratio */
   }
-  
+
   .learn-more-link {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #006400; /* Dark Bottle Green */
-    font-weight: bold;
-    transition: color 0.3s ease;
-    font-size: 30px;
+    font-size: 24px; /* Adjust font size for smaller screens */
   }
-  
-  .learn-more-link:hover {
-    color: #004d00; /* Slightly darker green */
+}
+
+/* Media Query for Mobile (480px and below) */
+@media (max-width: 480px) {
+  .tab-button {
+    font-size: 14px; /* Reduce button font size */
+    padding: 8px 15px; /* Adjust padding for smaller buttons */
   }
-  
+
+  .learn-more-link {
+    font-size: 18px; /* Reduce font size for the link */
+  }
+
+  .tab-content {
+    gap: 15px; /* Reduce spacing between items */
+  }
+
+  .content {
+    flex-direction: column !important; /* Ensure image appears below text */
+    gap: 20px;
+  }
+
+  .image-content img {
+    max-width: 100%; /* Fit image to screen size */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .text-content {
+    font-size: 14px; /* Adjust text size for readability */
+  }
+}

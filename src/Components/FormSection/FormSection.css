@@ -98,6 +98,10 @@ form button:hover {
     padding: -10px;
   }
 
+  .form-section-left img {
+    margin-left: -50px; /* Shift image to the left */
+    width:400px;
+  }
   .form-section-left,
   .form-section-right {
     max-width: 100%; /* Full width */
@@ -157,6 +161,10 @@ form button:hover {
     padding: -10px;
   }
 
+  .form-section-left img {
+    margin-left: -50px; /* Shift image to the left */
+    width:400px;
+  }
   .form-section-left,
   .form-section-right {
     max-width: 100%; /* Full width */
@@ -214,7 +222,10 @@ form button:hover {
     gap: 30px;
     padding: 30px;
   }
-
+  .form-section-left img {
+    margin-left: -50px; /* Shift image to the left */
+    width:400px;
+  }
   .form-section-left h2 {
     font-size: 2.5rem; /* Adjust heading size */
   }

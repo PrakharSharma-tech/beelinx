@@ -52,6 +52,8 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  max-width: 100%; /* Ensure the image container doesn't exceed its width */
+  overflow: hidden; /* Prevent image overflow */
 }
 
 .ai-graphic {
@@ -63,6 +65,8 @@
   background: linear-gradient(135deg, #0ff, #f0f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  max-width: 100%; /* Prevent image overflow */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .ai-icon {
@@ -97,22 +101,22 @@
   .ai-content {
     max-width: 100%;
     text-align: center; /* Center-align content on smaller screens */
-    font-size: 1.5rem; /* Reduce font size */
+    font-size: 1.5rem !important; /* Reduce font size */
   }
 
   .ai-title {
-    font-size: 2rem; /* Adjust title size */
+    font-size: 2rem !important; /* Adjust title size */
     margin-bottom: 0.5rem;
   }
 
   .ai-description {
-    font-size: 1.2rem; /* Adjust description size */
+    font-size: 1.2rem !important; /* Adjust description size */
     margin-bottom: 1rem;
   }
 
   .ai-button {
     padding: 0.6rem 1.2rem;
-    font-size: 0.9rem; /* Adjust button size */
+    font-size: 0.9rem !important; /* Adjust button size */
   }
 
   .ai-image {
@@ -121,48 +125,89 @@
   }
 
   .ai-graphic {
-    font-size: 10rem; /* Reduce graphic size */
+    font-size: 10rem !important; /* Reduce graphic size */
   }
 }
 
-/* Tablet Screens (481px to 768px) */
+/* Tablet Screens (481px to 768px) - Same as mobile (Including iPad Mini) */
 @media screen and (max-width: 768px) {
   .ai-section {
     flex-direction: column;
     height: auto; /* Adjust height for smaller screens */
-    margin-left: 30px;
-    margin-right: 30px;
-    padding: 1.5rem;
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    padding: 1.5rem !important;
   }
 
   .ai-content {
     max-width: 100%;
     text-align: center; /* Center-align content */
-    font-size: 2rem; /* Adjust font size */
+    font-size: 1.5rem !important; /* Same font size as mobile */
   }
 
   .ai-title {
-    font-size: 2.5rem; /* Adjust title size */
-    margin-bottom: 1rem;
+    font-size: 2rem !important; /* Same title size as mobile */
+    margin-bottom: 0.5rem;
   }
 
   .ai-description {
-    font-size: 1.4rem; /* Adjust description size */
-    margin-bottom: 1.5rem;
+    font-size: 1.2rem !important; /* Same description size as mobile */
+    margin-bottom: 1rem;
   }
 
   .ai-button {
-    padding: 0.7rem 1.4rem;
-    font-size: 1rem; /* Slight adjustment to button size */
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem !important; /* Same button size as mobile */
   }
 
   .ai-image {
-    margin-top: 30px; /* Add spacing above the image */
+    margin-top: 20px; /* Add spacing above the image */
     justify-content: center;
   }
 
   .ai-graphic {
-    font-size: 15rem; /* Slightly reduce graphic size */
+    font-size: 10rem !important; /* Same graphic size as mobile */
+  }
+}
+
+/* iPad Pro and iPad Air (768px to 1024px) - Same as iPad Mini */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .ai-section {
+    flex-direction: column;
+    height: auto; /* Adjust height for smaller screens */
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    padding: 1.5rem !important;
+  }
+
+  .ai-content {
+    max-width: 100%;
+    text-align: center; /* Center-align content */
+    font-size: 1.5rem !important; /* Same font size as mobile */
+  }
+
+  .ai-title {
+    font-size: 2rem !important; /* Same title size as mobile */
+    margin-bottom: 0.5rem;
+  }
+
+  .ai-description {
+    font-size: 1.2rem !important; /* Same description size as mobile */
+    margin-bottom: 1rem;
+  }
+
+  .ai-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem !important; /* Same button size as mobile */
+  }
+
+  .ai-image {
+    margin-top: 20px; /* Add spacing above the image */
+    justify-content: center;
+  }
+
+  .ai-graphic {
+    font-size: 10rem !important; /* Same graphic size as mobile */
   }
 }
 

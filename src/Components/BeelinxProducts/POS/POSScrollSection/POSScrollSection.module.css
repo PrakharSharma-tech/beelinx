@@ -38,12 +38,12 @@
 .contentBlock h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  text-align:left;
+  text-align: left;
 }
 
 .contentBlock p {
   margin-bottom: 1rem;
-  text-align:left;
+  text-align: left;
 }
 
 .button {
@@ -57,4 +57,46 @@
 
 .button:hover {
   background-color: #08cf65;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .driveEfficiencySection {
+    flex-direction: column; /* Stack elements vertically */
+    height: auto; /* Allow dynamic height */
+  }
+
+  .staticVideoContainer {
+    position: relative; /* Remove sticky positioning for smaller screens */
+    height: auto; /* Adjust height dynamically */
+    margin-bottom: 2rem; /* Add spacing between video and content */
+  }
+
+  .staticVideo {
+    max-width: 100%; /* Make video take full width */
+    max-height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+  }
+
+  .contentContainer {
+    padding: 1rem;
+    overflow-y: visible; /* Remove scrolling for smaller screens */
+  }
+
+  .contentBlock {
+    margin-bottom: 2rem; /* Reduce spacing between content blocks */
+  }
+
+  .contentBlock h3 {
+    font-size: 1.2rem; /* Slightly smaller headings */
+  }
+
+  .contentBlock p {
+    font-size: 1rem; /* Adjust text size */
+  }
+
+  .button {
+    padding: 0.5rem 1rem; /* Adjust button padding */
+    font-size: 0.9rem; /* Adjust button font size */
+  }
 }

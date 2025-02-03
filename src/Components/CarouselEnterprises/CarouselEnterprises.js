@@ -66,15 +66,16 @@ const Slide = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    text-align: center;
     padding: 1rem;
+    align-items: flex-start; /* Left align content */
+    position: relative; /* Ensure arrows are positioned within the slide */
   }
 `;
 
 const TextSection = styled.div`
   flex: 1;
   max-width: 50%;
-  text-align: left;
+  text-align: left; /* Default to left-align for consistency */
 
   h2 {
     font-size: 3rem;
@@ -83,7 +84,6 @@ const TextSection = styled.div`
 
     @media (max-width: 768px) {
       font-size: 2rem;
-      text-align: center;
     }
 
     @media (max-width: 480px) {
@@ -98,6 +98,7 @@ const TextSection = styled.div`
 
     @media (max-width: 480px) {
       font-size: 0.875rem;
+      width: 200px;
     }
   }
 
@@ -108,6 +109,8 @@ const TextSection = styled.div`
 
     @media (max-width: 480px) {
       font-size: 1rem;
+      width: 300px;
+      margin-left:-5px;
     }
   }
 
@@ -139,27 +142,43 @@ const ImageSection = styled.div`
 
   @media (max-width: 768px) {
     margin-top: 1rem;
+    max-width: 70%;
+    padding-left: 35px;
   }
 `;
 
 const NavigationButton = styled.button`
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   background: none;
   border: none;
   font-size: 2rem;
   color: #6b7280;
   cursor: pointer;
+  z-index: 10; /* Ensure arrows appear on top of content */
 
   &:hover {
     color: #2563eb;
   }
 
+  /* Default position for desktop */
+  top: 50%;
+  transform: translateY(-50%);
   ${({ direction }) => (direction === "prev" ? "left: 10px;" : "right: 10px;")}
 
-  @media (max-width: 480px) {
+  @media (max-width: 768px) {
     font-size: 1.5rem;
+    top: 50%; /* Keep it vertically centered */
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.25rem; /* Smaller arrows for small screens */
+    /* Adjust position for mobile to be in between text and image */
+    top: auto; /* Remove the default top position */
+    bottom: 50%; /* Center between text and image */
+    transform: translateY(50%);
+    ${({ direction }) =>
+      direction === "prev" ? "left: 5px;" : "right: 5px;"} /* Adjust margins */
   }
 `;
 

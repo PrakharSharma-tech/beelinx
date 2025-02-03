@@ -1,7 +1,134 @@
 import React, { useState, useEffect } from "react";
-import "./OSAAccordianSection.css";
+import styled from "styled-components";
 
-const OSAAccordionSection = () => {
+// Styled components
+const AccordionSectionWrapper = styled.section`
+  background-color: #f8f9fc;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+`;
+
+const AccordionContainer = styled.div`
+  .accordion-container h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2d3e50;
+    margin-bottom: 60px;
+    padding: 0;
+  }
+`;
+
+const AccordionAndImage = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  height: 650px;
+
+  @media (max-width: 768px) {
+    flex-direction: column ; /* Stack accordion and image vertically */
+    gap: 20px;
+    height: auto;
+  }
+`;
+
+const Accordion = styled.div`
+  flex: 1 1 300px;
+  max-width: 400px;
+`;
+
+const AccordionItem = styled.div`
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  border-left: 4px solid #00a99d;
+
+  &.active {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #00a99d;
+  }
+`;
+
+const AccordionTitle = styled.h3`
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3e50;
+`;
+
+const AccordionContent = styled.div`
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
+  margin-top: 10px;
+  font-size: 1rem;
+
+  &.show {
+    max-height: 300px; /* Adjust to accommodate content */
+  }
+`;
+
+const ImageContainer = styled.div`
+  flex: 1 1 800px;
+  max-width: 800px;
+  text-align: center;
+  margin-top: 20px;
+
+  @media (max-width: 768px) {
+    order: 2;
+    margin-top: 20px; /* Ensure space between accordion and image */
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+`;
+
+const CtaButtons = styled.div`
+  margin-top: 30px;
+`;
+
+const CtaButton = styled.button`
+  background-color: #00a99d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #007a74;
+  }
+
+  &.secondary {
+    background-color: transparent;
+    color: #00a99d;
+    border: 1px solid #00a99d;
+
+    &:hover {
+      background-color: #f0fdfd;
+    }
+  }
+`;
+
+const AccordionSection = () => {
   const accordionData = [
     {
       title: "Partner 1: [Tech Company Name]",
@@ -34,44 +161,38 @@ const OSAAccordionSection = () => {
   }, [accordionData.length]);
 
   return (
-    <section className="accordion-section">
-      <div className="accordion-container">
+    <AccordionSectionWrapper>
+      <AccordionContainer>
         <h2>Empowering Digital Transformation through Strategic Technology Partnerships</h2>
-        <div className="accordion-and-image">
-          <div className="accordion">
+        <AccordionAndImage>
+          <Accordion>
             {accordionData.map((item, index) => (
-              <div
+              <AccordionItem
                 key={index}
-                className={`accordion-item ${
-                  activeIndex === index ? "active" : ""
-                }`}
+                className={activeIndex === index ? "active" : ""}
                 onClick={() => setActiveIndex(index)}
               >
-                <h3 className="accordion-title">{item.title}</h3>
-                <div
-                  className={`accordion-content ${
-                    activeIndex === index ? "show" : ""
-                  }`}
-                >
+                <AccordionTitle>{item.title}</AccordionTitle>
+                <AccordionContent className={activeIndex === index ? "show" : ""}>
                   <p>{item.content}</p>
-                </div>
-              </div>
+                </AccordionContent>
+              </AccordionItem>
             ))}
-          </div>
-          <div className="image-container">
+          </Accordion>
+          <ImageContainer>
             <img
               src={accordionData[activeIndex].image}
               alt={`Accordion ${activeIndex}`}
             />
-          </div>
-        </div>
-        <div className="cta-buttons">
-          <button className="cta-button-AccordianSection">Try Beelinx for free</button>
-          <button className="cta-button secondary">Contact us</button>
-        </div>
-      </div>
-    </section>
+          </ImageContainer>
+        </AccordionAndImage>
+        <CtaButtons>
+          <CtaButton className="cta-button-AccordianSection">Try Beelinx for free</CtaButton>
+          <CtaButton className="secondary">Contact us</CtaButton>
+        </CtaButtons>
+      </AccordionContainer>
+    </AccordionSectionWrapper>
   );
 };
 
-export default OSAAccordionSection;
+export default AccordionSection;

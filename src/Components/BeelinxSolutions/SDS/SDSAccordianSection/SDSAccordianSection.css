@@ -1,111 +1,126 @@
-.accordion-section {
-    background-color: #f8f9fc;
-    padding: 50px 20px;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    height: 1000px;
-  }
-  
-  .accordion-container h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #2d3e50;
-    margin-bottom: 60px;
-padding: 0;
-  }
-  
+.accordion-section-wrapper {
+  background-color: #f8f9fc;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.accordion-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2d3e50;
+  margin-bottom: 60px;
+  padding: 0;
+}
+
+.accordion-and-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  height: 650px;
+}
+
+.accordion {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.accordion-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  border-left: 4px solid #00a99d;
+}
+
+.accordion-item.active {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #00a99d;
+}
+
+.accordion-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3e50;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.accordion-content.show {
+  max-height: 300px;
+}
+
+.image-container {
+  flex: 1 1 800px;
+  max-width: 800px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta-buttons {
+  margin-top: 30px;
+}
+
+.cta-button {
+  background-color: #00a99d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #007a74;
+}
+
+.cta-button.secondary {
+  background-color: transparent;
+  color: #00a99d;
+  border: 1px solid #00a99d;
+}
+
+.cta-button.secondary:hover {
+  background-color: #f0fdfd;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
   .accordion-and-image {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-    height:650px
+    flex-direction: column !important; /* Ensure accordion and image stack vertically */
+    gap: 20px !important;
+    height: auto !important;
   }
-  
-  .accordion {
-    flex: 1 1 300px;
-    max-width: 400px;
-  }
-  
-  .accordion-item {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    padding: 10px;
-    text-align: left;
-    cursor: pointer;
-    transition: box-shadow 0.3s ease;
-    border-left: 4px solid #00a99d;
-  }
-  
-  .accordion-item.active {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-left: 4px solid #00a99d;
-  }
-  
-  .accordion-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #2d3e50;
-  }
-  
-  .accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    color: #555;
-    margin-top: 10px;
-    font-size: 1rem;
-  }
-  
-  .accordion-content.show {
-    max-height: 300px; /* Adjust to accommodate content */
-  }
-  
+
   .image-container {
-    flex: 1 1 800px;
-    max-width: 800px;
-    text-align: center;
+    order: 2 !important; /* Place the image below the accordion */
+    margin-top: 20px !important; /* Ensure space between accordion and image */
+    flex-basis: 80% !important;
+    max-width: 40% !important;
   }
-  
-  .image-container img {
-    width: 700px;
-    max-width: 700px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .cta-buttons {
-    margin-top: 30px;
-  }
-  
-  .cta-button-AccordianSection {
-    background-color: #00a99d;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: #007a74;
-  }
-  
-  .cta-button.secondary {
-    background-color: transparent;
-    color: #00a99d;
-    border: 1px solid #00a99d;
-  }
-  
-  .cta-button.secondary:hover {
-    background-color: #f0fdfd;
-  }
-  
+}

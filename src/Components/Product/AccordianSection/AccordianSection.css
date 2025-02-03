@@ -3,7 +3,7 @@
     padding: 50px 20px;
     font-family: Arial, sans-serif;
     text-align: center;
-    height: 1000px;
+    height: 800px;
   }
   
   .accordion-container h2 {
@@ -108,4 +108,30 @@ padding: 0;
   .cta-button.secondary:hover {
     background-color: #f0fdfd;
   }
-  
+  /* Mobile view adjustments */
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .accordion-and-image {
+    display: flex !important;
+    flex-direction: column !important; /* Stack accordion and image vertically */
+    gap: 20px; /* Space between accordion and image */
+    height: auto; /* Allow height to adjust based on content */
+    margin-bottom: 30px !important;
+  }
+
+  .accordion {
+    flex: 1 1 100% !important ; /* Accordion takes full width */
+    max-width: 100% !important; /* Ensure full width on smaller screens */
+  }
+
+  .image-container {
+    order: 2 !important; /* Ensure image appears below the accordion */
+    flex: 1 1 100% !important; /* Make the image container take full width */
+    margin-top: 20px; /* Space between accordion and image */
+  }
+ 
+  .image-container img {
+    width: 100%; /* Ensure image takes full container width */
+    max-width: 100%; /* Ensure the image is responsive */
+  }
+}

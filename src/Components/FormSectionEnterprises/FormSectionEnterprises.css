@@ -107,14 +107,19 @@ form button:hover {
   .form-section {
     flex-direction: column;
     gap: 15px;
-    padding: 20px; /* Adjust padding */
-    margin-bottom: 700px;
+    padding: 10px; /* Adjust padding */
+    margin-bottom: 900px;
   }
 
   .form-section-left,
   .form-section-right {
     max-width: 100%;
     max-height: 100%;
+  }
+
+  .form-section-left img {
+    margin-left: -50px; /* Shift image to the left */
+    width:400px;
   }
 
   .form-section-right {
@@ -132,19 +137,24 @@ form button:hover {
   }
 }
 
-/* Tablet View (max-width: 768px) */
+/* Tablet View (max-width: 768px) and iPad Air/Pro */
 @media (max-width: 768px) {
   .form-section {
     flex-direction: column;
     gap: 20px;
     padding: 30px;
-    margin-bottom: 700px;
+    margin-bottom: 10px;
+  }
 
+  .form-section-left img {
+    margin-left: -50px; /* Shift image to the left */
+    width:400px;
   }
 
   .form-section-right {
     
-    height: 500px; /* Ensure spacing below the form */
+    margin-bottom: 100px !important;
+    height: 200px !important; /* Ensure spacing below the form */
   }
 
   form {
@@ -156,15 +166,37 @@ form button:hover {
 @media (max-width: 1024px) {
   .form-section {
     flex-direction: column;
-    gap: 40px;
-    padding: 40px;
+    gap: 15px;
+    padding: 10px; /* Adjust padding */
+    margin-bottom: 10px;
+  }
+
+  .form-section-left,
+  .form-section-right {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .form-section-left img {
+    margin-left: -50px; /* Shift image to the left */
+    width:400px;
   }
 
   .form-section-right {
-    margin-bottom: 40px;
+    margin-bottom: -150px;
+    height: 500px; /* Add bottom margin to prevent overlap */
+  }
+
+  form {
+    gap: 15px; /* Reduce gap between form elements */
+  }
+
+  form button {
+    font-size: 0.95rem;
+    padding: 10px; /* Adjust padding for smaller screens */
   }
 }
-
+  
 /* Desktop View (default) */
 @media (min-width: 1200px) {
   .form-section {
