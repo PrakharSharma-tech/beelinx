@@ -51,7 +51,7 @@ const Navbar = () => {
     <nav className="navbar" onClick={closeDropdown}>
       <div className="navbar-container">
       <a href="/" className="logo">
-          <img src="beelinx logo.png" alt="Beelinx Logo" />
+          <img src="beelinx logo cropped.png" alt="Beelinx Logo" />
         </a>
 
        <div className="hamburger-menu" onClick={toggleMobileMenu}>

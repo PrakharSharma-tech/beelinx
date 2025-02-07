@@ -4,13 +4,10 @@
   padding: 0 20px;
   height: 60px !important; /* Keep the height fixed */
   position: sticky;
-  
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding-bottom:20px;
-  padding-top:-50px;
+  padding-bottom: 10px;
 }
-
 .navbar-container {
   display: flex !important;
   justify-content: space-between !important;
@@ -18,18 +15,22 @@
 }
 
 .logo img {
-  height: 100px; /* Keep the same height */
-  width: 100px; /* Keep the same width */
+  height: 40px !important; /* Keep the same height */
+  width: 90px !important; /* Keep the same width */
   display: block;
   object-fit: fill !important;
-  margin-top: -20px !important; /* Move the logo up */
+  margin-top: 0px !important; /* Removed negative margin */
+  padding-top: 0px !important;
+  top: 0 !important;
+  align-self: center !important;
+  padding-bottom: 20px !important;
 }
 
 .navbar-links {
   list-style-type: none;
   display: flex;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 .navbar-links > li {
@@ -41,6 +42,7 @@
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 17px;
+  
 }
 
 .mega-menu {
@@ -56,7 +58,7 @@
   flex-direction: column;
   box-shadow: none !important;
   overflow-y: auto;
-  margin-top: 90px !important;
+  margin-top: 60px !important;
   text-align: left !important;
 }
 
@@ -104,6 +106,7 @@
   cursor: pointer !important;
   border-radius: 5px !important;
   margin-bottom: 20px !important;
+  margin-top: 15px;
 }
 
 .cta-button:hover {
