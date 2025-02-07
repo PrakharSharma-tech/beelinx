@@ -123,16 +123,17 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+/* Responsive Styles */
+/* Responsive Styles */
+@media (max-width: 1024px) {
   .pricing-cards {
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
     justify-content: center; /* Center the cards */
   }
 
   .pricing-card {
-    width: 100%; /* Full width for cards */
-    max-width: 90%; /* Limit max width */
-    margin: 0 auto 1rem; /* Center the card and add margin */
+    width: 48%; /* Set each card to take up 48% of the width, so 2 fit in one row */
+    margin: 0 1% 1rem; /* Add margin for spacing between cards, adjust as needed */
   }
 
   .pricing-header h1 {
@@ -146,6 +147,10 @@
   .cta-button-pricing {
     font-size: 14px;
     padding: 8px 16px;
+  }
+  .background-styled {
+    width: 95%; /* Adjust the width for smaller screens */
+    padding: 10px;
   }
 }
 

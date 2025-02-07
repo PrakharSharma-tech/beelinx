@@ -39,7 +39,7 @@ const DriveEfficiency = () => {
       {/* Static Video */}
       <div className={styles.staticVideoContainer}>
         <video
-          src="/Beelinx_features_demo.mp4" // Correct path to public folder
+          src="/scroll section home.mp4" // Correct path to public folder
           className={styles.staticVideo}
           autoPlay
           loop

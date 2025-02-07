@@ -26,7 +26,7 @@ const TakeAProductTour = () => {
    {/* <SplitBanner3Tour/> */}
    <BeelinxBannerTour3/>
    <SplitBanner4Tour/>
-   <CardsAndBadge/>
+   {/* <CardsAndBadge/> */}
    <BottomSection/>
       {/* <Footer/> */}
     </div>

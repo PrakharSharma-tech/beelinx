@@ -50,7 +50,9 @@ const Navbar = () => {
   return (
     <nav className="navbar" onClick={closeDropdown}>
       <div className="navbar-container">
-       <a href="/" className="logo">beelinx  </a>
+      <a href="/" className="logo">
+          <img src="beelinx logo.png" alt="Beelinx Logo" />
+        </a>
 
        <div className="hamburger-menu" onClick={toggleMobileMenu}>
           <i className="fas fa-bars"></i>
@@ -70,40 +72,24 @@ const Navbar = () => {
             </a>
             {dropdown === "solutions" && (
               <div className="mega-menu" ref={menuRef}>
-                <div className="sub-nav">
+                <div className="mega-menu-column">
+                  <h3>Beelinx Solutions</h3>
                   <ul>
-                    
-                  <li
-                      className={`sub-nav-link ${activeSubNav === "marketing" ? "active" : ""}`}
-                      onClick={() => setActiveSubNav("marketing")}
-                      
-                    >
-                      Beelinx Solutions
-                    </li>
-
-                    
-                  </ul>
-                </div>
-                <div className="mega-menu-content">
-                  {activeSubNav === "marketing" && (
-                    <>
-                      <div className="mega-menu-column">
-                        <h3>Beelinx Solutions</h3>
-                        
-                        <ul>
-                        <li>
+                  <li>
                             <i className="fas fa-chart-line"></i>{" "}
                             <a href="sds">Software Development Services</a>
                             <p style={{fontSize:"12px"}}>We provide tailored software development solutions to meet your business needs.
 </p>
 
                           </li>
+
                           <li>
                             <i className="fas fa-users"></i>{" "}
                             <a href="solutionsms">Software Maintenance and Support</a>
                             <p style={{fontSize:"12px"}}>We offer ongoing software maintenance and support to ensure optimal performance and reliability.</p>
 
                           </li>
+
                           <li>
                             <i className="fas fa-chart-pie"></i>{" "}
                             <a href="sci">Software Customization and Integration</a>
@@ -111,37 +97,40 @@ const Navbar = () => {
 </p>
 
                           </li>
-                          <li>
+                          <button>Try Beelinx for free</button>
+
+                  </ul>
+                </div>
+                <div className="mega-menu-column">
+                  <h3>Beelinx Solutions</h3>
+                  <ul>
+                  <li>
                             <i className="fas fa-chart-line"></i>{" "}
                             <a href="ste">Software Training and Education</a>
                             <p style={{fontSize:"12px"}}>We provide expert software training to empower your team with essential skills.
 </p>
 
                           </li>
-                          
-                         
-                          <button>Try Beelinx for free</button>
-                          
-                        </ul>
-                      </div>
-                      <div className="mega-menu-column">
-                        <h3>Beelinx Solutions</h3>
-                        <ul>
-                          
                           <li>
                             <i className="fas fa-users"></i>{" "}
                             <a href="saas">Software as a Service (SaaS)</a>
-                            <p style={{fontSize:"12px"}}>We deliver scalable, cloud-based software solutions through SaaS.
+                            <p style={{fontSize:"12px"}}>We deliver scalable, cloud-based software solutions through SaaS for efficiency and growth.
 </p>
 
                           </li>
                           <li>
                             <i className="fas fa-chart-pie"></i>{" "}
                             <a href="cps">Consulting Professional Services</a>
-                            <p style={{fontSize:"12px"}}>We offer expert consulting to drive your business success.</p>
+                            <p style={{fontSize:"12px"}}>We offer expert consulting to drive your business success with strategy and innovation.</p>
 
                           </li>
-                          <li>
+                          <button>Try Beelinx for free</button>
+                  </ul>
+                </div>
+                <div className="mega-menu-column">
+                  <h3>Beelinx Solutions</h3>
+                  <ul>
+                  <li>
                             <i className="fas fa-chart-line"></i>{" "}
                             <a href="osa">Outsourcing and Staff Augmentation</a>
                             <p style={{fontSize:"12px"}}>We provide outsourcing and staff augmentation to enhance your team’s capabilities.
@@ -154,25 +143,20 @@ const Navbar = () => {
                             <p style={{fontSize:"12px"}}>We foster strategic partnerships to drive mutual growth and innovation.</p>
 
                           </li>
-                          
-                          
-                          <button>Contact Sales</button>
-                        </ul>
-                      </div>
-                    </>
-                  )}
-                  
-                  <div className="mega-menu-column">
-                    <h3>Beelinx Solutions</h3>
-                    <ul>
-                    <li>
+
+                          <li>
                             <i className="fas fa-chart-pie"></i>{" "}
                             <a href="adi">API Design and Implementation</a>
                             <p style={{fontSize:"12px"}}>We design and implement seamless APIs to enhance system connectivity.
 </p>
 
                           </li>
-                          <li>
+                  </ul>
+                </div>
+                <div className="mega-menu-column">
+                  <h3>Beelinx Solutions</h3>
+                  <ul>
+                  <li>
                             <i className="fas fa-chart-line"></i>{" "}
                             <a href="adm">API Development and Management</a>
                             <p style={{fontSize:"12px"}}>We specialize in API development and management for smooth, efficient integration.</p>
@@ -190,9 +174,7 @@ const Navbar = () => {
                             <p style={{fontSize:"12px"}}>We create tailored API solutions to meet your specific business needs.</p>
 
                           </li>
-                      
-                    </ul>
-                  </div>
+                  </ul>
                 </div>
               </div>
             )}
@@ -306,7 +288,7 @@ const Navbar = () => {
                           </li>
                           <li>
                             <i className="fas fa-users"></i>{" "}
-                            <a href="csms"> Cooperative Society Management Software</a>
+                            <a href="csms"> Co-op Society Management Software</a>
                             <p style={{fontSize:"12px"}}>We offer software to efficiently manage cooperative society operatio</p>
 
                           </li>
@@ -318,7 +300,7 @@ const Navbar = () => {
               
             )}
           </li>
-          <li onClick={(e) => e.stopPropagation()}>
+          {/* <li onClick={(e) => e.stopPropagation()}>
           <a
               href="#"
               className={activeLink === "why-Beelinx" ? "active" : ""}
@@ -440,7 +422,7 @@ const Navbar = () => {
               </div>
               
             )}
-          </li>
+          </li> */}
           <li><a
               href="/enterprises"
               className={activeLink === "enterprise" ? "active" : ""}
@@ -448,13 +430,13 @@ const Navbar = () => {
             >
               Enterprise
             </a></li>
-          <li><a
+          {/* <li><a
               href="/pricing"
               className={activeLink === "pricing" ? "active" : ""}
               onClick={() => handleLinkClick("pricing")}
             >
               Pricing
-            </a></li>
+            </a></li> */}
           <li><a
               href="/contactsales"
               className={activeLink === "contact-sales" ? "active" : ""}

@@ -17,11 +17,11 @@ const homepage = () => {
       <Hero />
       <DriveEfficiency/>
       <TabSection/>
-      <EnterpriseSolutions/>
-      <Collaborate2024/>
+      {/* <EnterpriseSolutions/> */}
+      {/* <Collaborate2024/> */}
       <TemplatesSection/>
       <AISection/>
-      <IntegrationsSection/>
+      {/* <IntegrationsSection/> */}
       <Carousel/>
       {/* <Footer/> */}
     </div>

@@ -36,9 +36,7 @@ const NorthAmericaSection = () => {
             <li>
               <strong>Office Address:</strong> B-91, Sector 63,Noida
             </li>
-            <li>
-              <strong>Brazil:</strong> +55 21 3957 93 09
-            </li>
+            
           </ul>
         </div>
       </div>

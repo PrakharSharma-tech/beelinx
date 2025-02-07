@@ -18,7 +18,7 @@ const EnterprisesPage = () => {
     <div>
       {/* <Navbar/> */}
     <HeroSection/>
-    <TrustedBySection/>
+    {/* <TrustedBySection/> */}
     <AnchorSection/>
     <DiscoverBeelinxSection/>
     <TabSection2/>

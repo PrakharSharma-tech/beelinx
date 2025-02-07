@@ -6,7 +6,7 @@ const NotificationBar = () => {
     <div className="notification-bar">
        {/* Replace with your icon */}
       <span className="notification-text">
-        Beelinx signs agreement to acquire Klaxoon, a leading visual collaboration platform.{" "}
+       Welcome to Beelinx{" "}
         <a href="#" className="notification-link">Learn more.</a>
       </span>
     </div>

@@ -19,8 +19,8 @@
 }
 
 .staticVideo {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 90%;
+  max-height: 100%;
   border-radius: 8px; /* Optional: Add rounded corners */
 }
 

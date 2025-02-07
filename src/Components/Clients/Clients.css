@@ -45,7 +45,7 @@
   }
   
   .logo {
-    width: 40px; /* Default width for logos */
+    width: 70px !important; /* Default width for logos */
     height: auto;
   }
   

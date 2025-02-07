@@ -150,7 +150,7 @@ const EnterpriseSection = () => {
         ></Video>
       </VideoContainer>
 
-      <DiagramContainer>
+      {/* <DiagramContainer>
         <OldWayContainer>
           <DiagramHeading>The old way</DiagramHeading>
           <Box>Finance</Box>
@@ -175,7 +175,7 @@ const EnterpriseSection = () => {
           <Box>Professional Services</Box>
           <Box>Marketing & Creative</Box>
         </WithBeelinxContainer>
-      </DiagramContainer>
+      </DiagramContainer> */}
 
       <ButtonContainer>
         <Button>Try Beelinx for free</Button>
