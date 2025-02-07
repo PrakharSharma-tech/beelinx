@@ -21,7 +21,7 @@
   height: 100px; /* Keep the same height */
   width: 100px; /* Keep the same width */
   display: block;
-  object-fit: cover !important;
+  object-fit: fill !important;
   margin-top: -20px !important; /* Move the logo up */
 }
 
