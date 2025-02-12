@@ -51,7 +51,7 @@ const Navbar = () => {
     <nav className="navbar" onClick={closeDropdown}>
       <div className="navbar-container">
       <a href="/" className="logo">
-          <img src="beelinx logo cropped.png" alt="Beelinx Logo" />
+          <img src="beelinx logo cropped 2.png" alt="Beelinx Logo" />
         </a>
 
        <div className="hamburger-menu" onClick={toggleMobileMenu}>
@@ -73,7 +73,7 @@ const Navbar = () => {
             {dropdown === "solutions" && (
               <div className="mega-menu" ref={menuRef}>
                 <div className="mega-menu-column">
-                  <h3>Beelinx Solutions</h3>
+                  <h3>Software Solutions</h3>
                   <ul>
                   <li>
                             <i className="fas fa-chart-line"></i>{" "}
@@ -97,66 +97,22 @@ const Navbar = () => {
 </p>
 
                           </li>
-                          <button>Try Beelinx for free</button>
+                          {/* <button>Try Beelinx for free</button> */}
 
                   </ul>
                 </div>
                 <div className="mega-menu-column">
-                  <h3>Beelinx Solutions</h3>
+                  <h3>API Solutions</h3>
                   <ul>
                   <li>
-                            <i className="fas fa-chart-line"></i>{" "}
-                            <a href="ste">Software Training and Education</a>
-                            <p style={{fontSize:"12px"}}>We provide expert software training to empower your team with essential skills.
-</p>
-
-                          </li>
-                          <li>
-                            <i className="fas fa-users"></i>{" "}
-                            <a href="saas">Software as a Service (SaaS)</a>
-                            <p style={{fontSize:"12px"}}>We deliver scalable, cloud-based software solutions through SaaS for efficiency and growth.
-</p>
-
-                          </li>
-                          <li>
-                            <i className="fas fa-chart-pie"></i>{" "}
-                            <a href="cps">Consulting Professional Services</a>
-                            <p style={{fontSize:"12px"}}>We offer expert consulting to drive your business success with strategy and innovation.</p>
-
-                          </li>
-                          <button>Try Beelinx for free</button>
-                  </ul>
-                </div>
-                <div className="mega-menu-column">
-                  <h3>Beelinx Solutions</h3>
-                  <ul>
-                  <li>
-                            <i className="fas fa-chart-line"></i>{" "}
-                            <a href="osa">Outsourcing and Staff Augmentation</a>
-                            <p style={{fontSize:"12px"}}>We provide outsourcing and staff augmentation to enhance your team’s capabilities.
-</p>
-
-                          </li>
-                          <li>
-                            <i className="fas fa-users"></i>{" "}
-                            <a href="pac">Partnership and Collaboration</a>
-                            <p style={{fontSize:"12px"}}>We foster strategic partnerships to drive mutual growth and innovation.</p>
-
-                          </li>
-
-                          <li>
                             <i className="fas fa-chart-pie"></i>{" "}
                             <a href="adi">API Design and Implementation</a>
                             <p style={{fontSize:"12px"}}>We design and implement seamless APIs to enhance system connectivity.
 </p>
 
                           </li>
-                  </ul>
-                </div>
-                <div className="mega-menu-column">
-                  <h3>Beelinx Solutions</h3>
-                  <ul>
-                  <li>
+
+                          <li>
                             <i className="fas fa-chart-line"></i>{" "}
                             <a href="adm">API Development and Management</a>
                             <p style={{fontSize:"12px"}}>We specialize in API development and management for smooth, efficient integration.</p>
@@ -168,10 +124,56 @@ const Navbar = () => {
                             <p style={{fontSize:"12px"}}>We ensure robust API testing and seamless integration for flawless performance.</p>
 
                           </li>
-                          <li>
+                          {/* <button>Try Beelinx for free</button> */}
+                  </ul>
+                </div>
+                <div className="mega-menu-column">
+                  <h3>Professional Solutions</h3>
+                  <ul>
+                  <li>
+                            <i className="fas fa-chart-pie"></i>{" "}
+                            <a href="cps">Consulting Professional Services</a>
+                            <p style={{fontSize:"12px"}}>We offer expert consulting to drive your business success with strategy and innovation.</p>
+
+                          </li>
+
+ <li>
+                            <i className="fas fa-chart-line"></i>{" "}
+                            <a href="ste">Software Training and Education</a>
+                            <p style={{fontSize:"12px"}}>We provide expert software training to empower your team with essential skills.
+</p>
+
+                          </li>
+<li>
+                            <i className="fas fa-chart-line"></i>{" "}
+                            <a href="osa">Outsourcing and Staff Augmentation</a>
+                            <p style={{fontSize:"12px"}}>We provide outsourcing and staff augmentation to enhance your team’s capabilities.
+</p>
+
+                          </li>
+
+                  </ul>
+                </div>
+                <div className="mega-menu-column">
+                  <h3>Other Solutions</h3>
+                  <ul>
+                  <li>
+                            <i className="fas fa-users"></i>{" "}
+                            <a href="saas">Software as a Service (SaaS)</a>
+                            <p style={{fontSize:"12px"}}>We deliver scalable, cloud-based software solutions through SaaS for efficiency and growth.
+</p>
+
+                          </li>
+<li>
                             <i className="fas fa-users"></i>{" "}
                             <a href="cas">Custom API Solutions</a>
                             <p style={{fontSize:"12px"}}>We create tailored API solutions to meet your specific business needs.</p>
+
+                          </li>
+<li>
+                            <i className="fas fa-users"></i>{" "}
+                            <a href="pac">Partnership and Collaboration</a>
+                            <p style={{fontSize:"12px"}}>We foster strategic partnerships to drive mutual growth and innovation.</p>
 
                           </li>
                   </ul>
@@ -186,12 +188,71 @@ const Navbar = () => {
               className={activeLink === "product" ? "active" : ""}
               onClick={() => { toggleDropdown("product"); handleLinkClick("product"); }}
             >
-              Product
+              Products
             </a>
             {dropdown === "product" && (
               <div className="mega-menu" ref={menuRef}>
                 <div className="mega-menu-column">
-                  <h3>Beelinx Products</h3>
+                  <h3>Payment Products</h3>
+                  <ul>
+                  <li>
+                            <i className="fas fa-chart-pie"></i>{" "}
+                            <a href="pms"> Payin Management Software</a>
+                            <p style={{fontSize:"12px"}}>We provide payin management software for seamless payment processing.</p>
+
+                          </li>
+<li>
+                            <i className="fas fa-chart-line"></i>{" "}
+                            <a href="payoutms"> Payout Management Software</a>
+                            <p style={{fontSize:"12px"}}>We offer payout management software for smooth and secure payment disbursements.</p>
+
+                          </li>
+
+<li>
+                            <i className="fas fa-users"></i>{" "}
+                            <a href="trs"> Transaction Reconciliation Software</a>
+                            <p style={{fontSize:"12px"}}>We provide software for accurate and efficient transaction reconciliation.
+</p>
+
+                          </li>
+                          
+                         
+                          
+                          
+
+                    {/* <button>Try Beelinx for free</button> */}
+                  </ul>
+                </div>
+                <div className="mega-menu-column">
+                  <h3>Enterprise Products</h3>
+                  <ul>
+                  <li>
+                            <i className="fas fa-chart-line"></i>{" "}
+                            <a href="crm">CRM Software</a>
+                            <p style={{fontSize:"12px"}}>We provide CRM software to optimize customer relationships and boost sales</p>
+
+                          </li>
+
+
+<li>
+                            <i className="fas fa-chart-pie"></i>{" "}
+                            <a href="erp"> ERP Software</a>
+                            <p style={{fontSize:"12px"}}>We offer ERP software to streamline business processes and improve efficiency.</p>
+
+                          </li>
+ <li>
+                            <i className="fas fa-users"></i>{" "}
+                            <a href="pos">Retail POS Softwares</a>
+                            <p style={{fontSize:"12px"}}>We offer retail POS software for efficient sales and inventory management.</p>
+
+                          </li>
+                          
+                          
+                          {/* <button>Contact Sales</button> */}
+                  </ul>
+                </div>
+                <div className="mega-menu-column">
+                  <h3>Management Products</h3>
                   <ul>
                   <li>
                             <i className="fas fa-chart-line"></i>{" "}
@@ -200,79 +261,24 @@ const Navbar = () => {
 </p>
 
                           </li>
-                          <li>
-                            <i className="fas fa-users"></i>{" "}
-                            <a href="trs"> Transaction Reconciliation Software</a>
-                            <p style={{fontSize:"12px"}}>We provide software for accurate and efficient transaction reconciliation.
-</p>
-
-                          </li>
-                          <li>
-                            <i className="fas fa-chart-pie"></i>{" "}
-                            <a href="cms"> Chargeback Management Software</a>
-                            <p style={{fontSize:"12px"}}>We offer chargeback management software to streamline dispute resolution.</p>
-
-                          </li>
-                          
-                         
-                          
-                          
-
-                    <button>Try Beelinx for free</button>
-                  </ul>
-                </div>
-                <div className="mega-menu-column">
-                  <h3>Beelinx Products</h3>
-                  <ul>
-                  <li>
-                            <i className="fas fa-chart-line"></i>{" "}
-                            <a href="crm">CRM Software</a>
-                            <p style={{fontSize:"12px"}}>We provide CRM software to optimize customer relationships and boost sales</p>
-
-                          </li>
-                          <li>
-                            <i className="fas fa-users"></i>{" "}
-                            <a href="pos">Retail POS Softwares</a>
-                            <p style={{fontSize:"12px"}}>We offer retail POS software for efficient sales and inventory management.</p>
-
-                          </li>
-                          <li>
-                            <i className="fas fa-chart-pie"></i>{" "}
-                            <a href="pms"> Payin Management Software</a>
-                            <p style={{fontSize:"12px"}}>We provide payin management software for seamless payment processing.</p>
-
-                          </li>
-                          
-                          
-                          <button>Contact Sales</button>
-                  </ul>
-                </div>
-                <div className="mega-menu-column">
-                  <h3>Beelinx Products</h3>
-                  <ul>
-                  <li>
-                            <i className="fas fa-chart-line"></i>{" "}
-                            <a href="payoutms"> Payout Management Software</a>
-                            <p style={{fontSize:"12px"}}>We offer payout management software for smooth and secure payment disbursements.</p>
-
-                          </li>
-                          <li>
+<li>
                             <i className="fas fa-users"></i>{" "}
                             <a href="lms"> Loan Management Software</a>
                             <p style={{fontSize:"12px"}}>We provide loan management software for efficient loan tracking and processing.</p>
 
                           </li>
-                          <li>
+
+<li>
                             <i className="fas fa-chart-pie"></i>{" "}
-                            <a href="erp"> ERP Software</a>
-                            <p style={{fontSize:"12px"}}>We offer ERP software to streamline business processes and improve efficiency.</p>
+                            <a href="cms"> Chargeback Management Software</a>
+                            <p style={{fontSize:"12px"}}>We offer chargeback management software to streamline dispute resolution.</p>
 
                           </li>
                          
                   </ul>
                 </div>
                 <div className="mega-menu-column">
-                  <h3>Beelinx Products</h3>
+                  <h3>Other Products</h3>
                   <ul>
                   <li>
                             <i className="fas fa-chart-line"></i>{" "}
@@ -452,7 +458,7 @@ const Navbar = () => {
               Log in
             </a></li>
         </ul>
-        <button className="cta-button">Try Beelinx for free</button>
+        {/* <button className="cta-button">Try Beelinx for free</button> */}
       </div>
     </nav>
   );
