@@ -7,7 +7,7 @@ const NotificationBar = () => {
        {/* Replace with your icon */}
       <span className="notification-text">
       Create innovative products with Robust, Secure and Scalable state of the art APIs.{" "}
-        <a href="#" className="notification-link">Learn more.</a>
+        {/* <a href="#" className="notification-link">Learn more.</a> */}
       </span>
     </div>
   );
