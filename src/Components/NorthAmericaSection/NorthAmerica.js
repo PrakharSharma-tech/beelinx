@@ -57,15 +57,15 @@ const NorthAmericaSection = () => {
             <li><strong>Portugal:</strong> +351 308 802 093</li>
             <li><strong>Spain:</strong> +34 911 23 71 10</li>
             <li><strong>United Kingdom:</strong> +44 808 164 0240</li> */}
-            <li>For technical support, visit our support portal where you can find FAQs, troubleshooting guides, and submit support tickets.</li>
-          <li><a href="#">Suport Portal</a></li>
+            {/* <li>For technical support, visit our support portal where you can find FAQs, troubleshooting guides, and submit support tickets.</li>
+          <li><a href="#">Suport Portal</a></li> */}
           <li>Business Hours:</li>
           <li>Hours of Operation</li>
           <li>Our business hours are:</li>
           <li>Monday to Friday: 9:00 AM - 6:00 PM</li>
           <li>Saturday and Sunday: Closed</li>
-          <li>Our Social Media:</li>
-          <li><div style={{marginTop:"20px"}} className="footer-social"><a href="https://www.facebook.com" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a><a href="https://www.twitter.com" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a><a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in"></i></a><a href="https://www.instagram.com" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a></div></li>
+          {/* <li>Our Social Media:</li>
+          <li><div style={{marginTop:"20px"}} className="footer-social"><a href="https://www.facebook.com" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a><a href="https://www.twitter.com" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a><a href="https://www.linkedin.com" target="_blank" rel="noreferrer"><i className="fab fa-linkedin-in"></i></a><a href="https://www.instagram.com" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a></div></li> */}
           </ul>
         </div>
       </div>

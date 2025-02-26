@@ -73,14 +73,14 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-legal">
             <p>© {new Date().getFullYear()} Beelinx, Inc. All rights reserved.</p>
-            <ul>
+            {/* <ul>
               <li><a href="#terms">Terms of Service</a></li>
               <li><a href="#privacy">Privacy Policy</a></li>
               <li><a href="#cookie-policy">Cookie Policy</a></li>
-            </ul>
+            </ul> */}
           </div>
           <div className="footer-social">
-            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+            {/* <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
               <i className="fab fa-facebook-f"></i>
             </a>
             <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
@@ -91,7 +91,7 @@ const Footer = () => {
             </a>
             <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
               <i className="fab fa-instagram"></i>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

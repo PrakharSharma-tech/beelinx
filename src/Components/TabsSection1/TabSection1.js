@@ -8,40 +8,40 @@ const TabSection = () => {
       title: "Business Consulting",
       description:
         "Our consulting services help organizations leverage APIs to drive growth, unlock new revenue opportunities, and optimize strategies that align with business goals.",
-      image: "/ViewsBeelinx.png", // Replace with your image path
-      link: "#views",
+      image: "/Business_Consulting_2.png", // Replace with your image path
+      link: "/contactsales",
     },
     {
       id: 2,
       title: "API Development",
       description:
         "Our API development services offer end-to-end support in designing, building, and deploying secure, scalable APIs that are fully tailored to your unique business needs and goals.",
-      image: "BeelinxDashboard.png", // Replace with your image path
-      link: "#automation-ai",
+      image: "API development.png", // Replace with your image path
+      link: "/contactsales",
     },
     {
       id: 3,
       title: "API Management",
       description:
         "Our API Management Services offer powerful tools to manage, secure, and analyze your APIs, ensuring optimal performance, security, and reliability throughout their lifecycle.",
-      image: "mobile apps.png", // Replace with your image path
-      link: "#mobile-apps",
+      image: "API Management.png", // Replace with your image path
+      link: "/contactsales",
     },
     {
       id: 4,
       title: "Integration Tool Kit",
       description:
         "Simplify API integration with our comprehensive tool kit, designed to streamline integration, ensure smooth operation, and enhance overall system functionality and performance.",
-      image: "BeelinxDashboard.png", // Replace with your image path
-      link: "#dashboard",
+      image: "Integration tool kit.png", // Replace with your image path
+      link: "/contactsales",
     },
     {
       id: 5,
       title: "Technical Services",
       description:
         "Our technical services offer expert support, guidance, and troubleshooting for developers, users, and clients, ensuring smooth API integration and prompt issue resolution.",
-      image: "/ViewsBeelinx.png", // Replace with your image path
-      link: "#proofing",
+      image: "/Technical Services.png", // Replace with your image path
+      link: "/contactsales",
     },
     // {
     //   id: 6,

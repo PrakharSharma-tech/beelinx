@@ -7,7 +7,7 @@ const testimonials = [
     author: 'XYZ Bank',
     stat: 'Customer Testimonials',
     description: 'See what our clients are saying about Beelinx.',
-    image: 'BeelinxHomepageCarousel1.png',
+    image: 'Testimonial 1.png',
     logo: 'path/to/texas-rangers-logo.png',
   },
   {
@@ -15,7 +15,7 @@ const testimonials = [
     author: 'ABC FinTech',
     stat: 'Customer Testimonials',
     description: 'See what our clients are saying about Beelinx',
-    image: 'BeelinxHomepageCarousel2.png',
+    image: 'Testimonial 1.png',
     logo: 'path/to/xyz-agency-logo.png',
   },
   {
@@ -23,7 +23,7 @@ const testimonials = [
     author: 'DEF E-Commerce',
     stat: 'Customer Testimonials',
     description: 'See what our clients are saying about Beelinx.',
-    image: 'BeelinxHomepageCarousel1.png',
+    image: 'Testimonial 1.png',
     logo: 'path/to/texas-rangers-logo.png',
   },
   // Add more testimonials as needed
@@ -61,7 +61,7 @@ const Carousel = () => {
             {/* <img src={testimonial.logo} alt="Logo" className="logo" /> */}
             <div className="actions">
               {/* <button className="video-button">Watch video</button> */}
-              <button className="read-more">Read more →</button>
+              {/* <button className="read-more">Read more →</button> */}
             </div>
           </div>
           <div className="image-section">

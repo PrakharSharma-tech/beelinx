@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import emailjs from "emailjs-com"; // Import EmailJS
 
-// Styled Components
-
-// Form Section Container
+// Styled Components (same as before)
 const FormSectionContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -18,51 +17,15 @@ const FormSectionContainer = styled.div`
     flex-direction: column;
     gap: 15px;
     padding: 10px;
-
-   
-  }
-
-  @media (max-width: 600px) {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px;
-  }
-
-  @media (max-width: 1024px) {
-    flex-direction: column;
-    gap: 40px;
-    padding: 40px;
-  }
-
-  @media (max-width: 1200px) {
-    flex-direction: row;
-    gap: 50px;
-    padding: 50px;
   }
 `;
 
-// Left Section (Contact Info)
 const FormSectionLeft = styled.div`
   flex: 1;
   max-width: 500px;
   text-align: center;
-
-  @media (max-width: 480px) {
-    text-align: center;
-    max-width: 100%;
-    img {
-    margin-left: -50px; /* Shift image to the left */
-    width:400px;
-  }
-  }
 `;
 
-// Left Section Title
 const FormSectionLeftTitle = styled.h2`
   font-size: 3rem;
   color: #1e2b39;
@@ -73,58 +36,22 @@ const FormSectionLeftTitle = styled.h2`
     font-size: 1.8rem;
     text-align: center;
   }
-
-  @media (max-width: 600px) {
-    font-size: 2rem;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 2.5rem;
-  }
-
-  @media (max-width: 1024px) {
-    font-size: 2.8rem;
-  }
 `;
 
-// Left Section Description
 const FormSectionLeftDescription = styled.p`
   font-size: 1.1rem;
   color: #6b7c8a;
   margin-bottom: 20px;
-
-  @media (max-width: 480px) {
-    font-size: 0.95rem;
-    margin-bottom: 10px;
-  }
-
-  @media (max-width: 600px) {
-    font-size: 1rem;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 1.05rem;
-  }
 `;
 
-// Left Section List
 const FormSectionLeftList = styled.ul`
   list-style-type: none;
   padding: 0;
   text-align: left;
   margin: 0 auto;
   max-width: 90%;
-
-  @media (max-width: 600px) {
-    text-align: left;
-  }
-
-  @media (max-width: 768px) {
-    text-align: left;
-  }
 `;
 
-// Left Section List Item
 const FormSectionLeftListItem = styled.li`
   font-size: 1rem;
   color: #6b7c8a;
@@ -139,39 +66,19 @@ const FormSectionLeftListItem = styled.li`
   }
 `;
 
-// Right Section (Form)
 const FormSectionRight = styled.div`
   flex: 1;
   max-width: 400px;
   height: auto;
-
-  @media (max-width: 480px) {
-    max-width: 100%;
-    margin-bottom: 30px;
-  }
-
-  @media (max-width: 600px) {
-    max-width: 100%;
-  }
 `;
 
-// Form Fields
 const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 40px;
   height: auto;
-
-  @media (max-width: 480px) {
-    gap: 15px;
-  }
-
-  @media (max-width: 600px) {
-    gap: 15px;
-  }
 `;
 
-// Form Input Fields
 const Input = styled.input`
   width: 100%;
   padding: 10px;
@@ -183,17 +90,8 @@ const Input = styled.input`
   &:focus {
     outline: 2px solid #32a852;
   }
-
-  @media (max-width: 480px) {
-    font-size: 0.85rem;
-  }
-
-  @media (max-width: 600px) {
-    font-size: 0.9rem;
-  }
 `;
 
-// Form Select Dropdown
 const Select = styled.select`
   width: 100%;
   padding: 10px;
@@ -201,39 +99,18 @@ const Select = styled.select`
   border: 1px solid #d1d1d1;
   border-radius: 5px;
   color: #333;
-
-  @media (max-width: 480px) {
-    font-size: 0.85rem;
-  }
-
-  @media (max-width: 600px) {
-    font-size: 0.9rem;
-  }
 `;
 
-// Form Textarea
 const Textarea = styled.textarea`
   padding: 20px;
   font-size: 16px;
   width: 100%;
-  height: 150px;  // Set a fixed height to prevent it from being too long
+  height: 150px;
   resize: vertical;
   border-radius: 5px;
   margin-bottom: 20px;
-
-  @media (max-width: 480px) {
-    font-size: 0.85rem;
-    padding: 15px;
-    height: 120px;  // Adjust the height for smaller screens
-  }
-
-  @media (max-width: 600px) {
-    font-size: 0.9rem;
-    height: 130px;  // Slightly increased height for better usability on medium mobile screens
-  }
 `;
 
-// Submit Button
 const SubmitButton = styled.button`
   background-color: #32a852;
   color: #fff;
@@ -246,35 +123,16 @@ const SubmitButton = styled.button`
   &:hover {
     background-color: #288f42;
   }
-
-  @media (max-width: 480px) {
-    font-size: 0.95rem;
-    padding: 8px 12px;
-  }
-
-  @media (max-width: 600px) {
-    font-size: 1rem;
-    padding: 10px 15px;
-  }
 `;
 
-// Confidence Footer
 const ConfidenceFooter = styled.div`
   text-align: center;
   margin-top: 100px;
-
-  @media (max-width: 600px) {
-    margin-top: 200px;
-  }
 `;
 
 const ConfidenceFooterText = styled.p`
   font-size: 40px;
   padding-bottom: 40px;
-
-  @media (max-width: 600px) {
-    font-size: 30px;
-  }
 `;
 
 const Logos = styled.div`
@@ -289,7 +147,64 @@ const Logos = styled.div`
   }
 `;
 
+// Main FormSection Component
 const FormSection = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const [status, setStatus] = useState(""); // To show form submission status
+
+  // Handle form field changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  // Handle form submission using EmailJS
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Check if all fields are filled
+    if (!formData.name || !formData.email || !formData.phone || !formData.subject || !formData.message) {
+      setStatus("All fields are required.");
+      return;
+    }
+
+    // Use EmailJS to send the email
+    emailjs
+      .send(
+        "service_ve05s78",  // Your EmailJS service ID
+        "template_t1mezni",  // Your EmailJS template ID
+        formData,            // Form data to be sent
+        "KgC3sA3uE4lPnevgl"       // Your EmailJS user ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setStatus("Message sent successfully!");
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            subject: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.error(error.text);
+          setStatus("Error sending message. Please try again later.");
+        }
+      );
+  };
+
   return (
     <div>
       <FormSectionContainer>
@@ -311,38 +226,65 @@ const FormSection = () => {
         </FormSectionLeft>
 
         <FormSectionRight>
-          <Form>
-            <Input type="text" placeholder="Full name" required />
-            <Input type="email" placeholder="Email" required />
-            <Input type="tel" placeholder="Phone" required />
-            <Select required>
-              <option value="" disabled selected>
+          <Form onSubmit={handleSubmit}>
+            <Input
+              type="text"
+              name="name"
+              value={formData.name}
+              placeholder="Full name"
+              onChange={handleChange}
+              required
+            />
+            <Input
+              type="email"
+              name="email"
+              value={formData.email}
+              placeholder="Email"
+              onChange={handleChange}
+              required
+            />
+            <Input
+              type="tel"
+              name="phone"
+              value={formData.phone}
+              placeholder="Phone"
+              onChange={handleChange}
+              required
+            />
+            <Select
+              name="subject"
+              value={formData.subject}
+              onChange={handleChange}
+              required
+            >
+              <option value="" disabled>
                 Subject
               </option>
-              <option value="Marketing">General Inquiry</option>
-              <option value="IT">Sales Inquiry</option>
-              <option value="Finance">Technical Support</option>
-              <option value="Finance">Partnership Opportunity</option>
-              <option value="Finance">Other</option>
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Sales Inquiry">Sales Inquiry</option>
+              <option value="Technical Support">Technical Support</option>
+              <option value="Partnership Opportunity">Partnership Opportunity</option>
             </Select>
-            <Textarea rows="80" placeholder="Your message here" />
-            <SubmitButton type="submit">Get in touch</SubmitButton>
+            <Textarea
+              name="message"
+              value={formData.message}
+              placeholder="Your message"
+              onChange={handleChange}
+              required
+            ></Textarea>
+            <SubmitButton type="submit">Send Message</SubmitButton>
           </Form>
+          {status && <p>{status}</p>} {/* Display status */}
         </FormSectionRight>
       </FormSectionContainer>
 
-      <ConfidenceFooter>
-        <ConfidenceFooterText>Trusted by 20,000+ organizations worldwide</ConfidenceFooterText>
+      {/* <ConfidenceFooter>
+        <ConfidenceFooterText>Confidence in Beelinx</ConfidenceFooterText>
         <Logos>
-          <img src="brand1Beelinx.svg" alt="ABB" />
-          <img src="brand2Beelinx.svg" alt="AVEVA" />
-          <img src="brand3Beelinx.svg" alt="Lyft" />
-          <img src="brand4Beelinx.svg" alt="Siemens" />
-          <img src="brand5Beelinx.svg" alt="Schneider Electric" />
-          <img src="brand6Beelinx.svg" alt="Ogilvy" />
-          <img src="brand7Beelinx.svg" alt="T-Mobile" />
+          <img src="/Logo1.png" alt="Logo1" />
+          <img src="/Logo2.png" alt="Logo2" />
         </Logos>
-      </ConfidenceFooter>
+      </ConfidenceFooter> */}
     </div>
   );
 };

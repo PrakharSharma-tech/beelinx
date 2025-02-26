@@ -55,7 +55,10 @@ const DriveEfficiency = () => {
           <div className={styles.contentBlock} key={index}>
             <h3>{item.title}</h3>
             <p>{item.description}</p>
-            <button className={styles.button}>{item.buttonText}</button>
+            <a href="/contactsales" className={styles.link}>
+  <button className={styles.button}>{item.buttonText}</button>
+</a>
+
           </div>
         ))}
       </div>

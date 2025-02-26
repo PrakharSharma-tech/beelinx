@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css"; // Import styles
-import BeelinxHero from "./hero-animation-homepage-600-1.svg"; // Import the image
+// import BeelinxHero from "Home Page Beelinx.jpg"; // Import the image
 
 const Hero = () => {
   return (
@@ -11,12 +11,15 @@ const Hero = () => {
         "At Beelinx, we are dedicated to revolutionizing the financial technology landscape with our innovative solutions. Our mission is to drive growth, efficiency, and digital transformation for businesses of all sizes."
         </p>
         <div className="hero-buttons">
-          <button className="cta-button">Get Started Today</button>
+        <a href="/ContactSales" className="cta-link">
+  <button className="cta-button">Get Started Today</button>
+</a>
+
           {/* <button className="secondary-button">Discover Beelinx in 3 minutes</button> */}
         </div>
       </div>
       <div className="hero-image">
-        <img src={BeelinxHero} alt="Placeholder" />
+        <img src='/Home_Page_Beelinx_2.png' alt="Placeholder" />
       </div>
     </section>
   );

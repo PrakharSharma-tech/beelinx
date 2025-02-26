@@ -27,14 +27,12 @@ const TemplatesSection = () => {
       <div className="templates-container">
         {templates.map((template, index) => (
           <div key={index} className="template-item">
-            <span className="icon">{template.icon}</span>
+            {/* <span className="icon">{template.icon}</span> */}
             <span className="name">{template.name}</span>
           </div>
         ))}
       </div>
-      <a href="#" className="see-all-link">
-        See all Products →
-      </a>
+      
     </section>
   );
 };

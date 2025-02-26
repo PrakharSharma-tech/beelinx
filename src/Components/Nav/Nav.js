@@ -76,7 +76,7 @@ const Navbar = () => {
                   <h3>Software Solutions</h3>
                   <ul>
                   <li>
-                            <i className="fas fa-chart-line"></i>{" "}
+                            {/* <i className="fas fa-chart-line"></i>{" "} */}
                             <a href="sds">Software Development Services</a>
                             <p style={{fontSize:"12px"}}>We provide tailored software development solutions to meet your business needs.
 </p>
@@ -84,14 +84,14 @@ const Navbar = () => {
                           </li>
 
                           <li>
-                            <i className="fas fa-users"></i>{" "}
+                            {/* <i className="fas fa-users"></i>{" "} */}
                             <a href="solutionsms">Software Maintenance and Support</a>
                             <p style={{fontSize:"12px"}}>We offer ongoing software maintenance and support to ensure optimal performance and reliability.</p>
 
                           </li>
 
                           <li>
-                            <i className="fas fa-chart-pie"></i>{" "}
+                            {/* <i className="fas fa-chart-pie"></i>{" "} */}
                             <a href="sci">Software Customization and Integration</a>
                             <p style={{fontSize:"12px"}}>We specialize in customizing and integrating software to fit your unique business requirements.
 </p>
@@ -105,7 +105,7 @@ const Navbar = () => {
                   <h3>API Solutions</h3>
                   <ul>
                   <li>
-                            <i className="fas fa-chart-pie"></i>{" "}
+                            {/* <i className="fas fa-chart-pie"></i>{" "} */}
                             <a href="adi">API Design and Implementation</a>
                             <p style={{fontSize:"12px"}}>We design and implement seamless APIs to enhance system connectivity.
 </p>
@@ -113,13 +113,13 @@ const Navbar = () => {
                           </li>
 
                           <li>
-                            <i className="fas fa-chart-line"></i>{" "}
+                            {/* <i className="fas fa-chart-line"></i>{" "} */}
                             <a href="adm">API Development and Management</a>
                             <p style={{fontSize:"12px"}}>We specialize in API development and management for smooth, efficient integration.</p>
 
                           </li>
                           <li>
-                            <i className="fas fa-users"></i>{" "}
+                            {/* <i className="fas fa-users"></i>{" "} */}
                             <a href="ati">API Testing and Integration</a>
                             <p style={{fontSize:"12px"}}>We ensure robust API testing and seamless integration for flawless performance.</p>
 
@@ -131,21 +131,21 @@ const Navbar = () => {
                   <h3>Professional Solutions</h3>
                   <ul>
                   <li>
-                            <i className="fas fa-chart-pie"></i>{" "}
+                            {/* <i className="fas fa-chart-pie"></i>{" "} */}
                             <a href="cps">Consulting Professional Services</a>
                             <p style={{fontSize:"12px"}}>We offer expert consulting to drive your business success with strategy and innovation.</p>
 
                           </li>
 
  <li>
-                            <i className="fas fa-chart-line"></i>{" "}
+                            {/* <i className="fas fa-chart-line"></i>{" "} */}
                             <a href="ste">Software Training and Education</a>
                             <p style={{fontSize:"12px"}}>We provide expert software training to empower your team with essential skills.
 </p>
 
                           </li>
 <li>
-                            <i className="fas fa-chart-line"></i>{" "}
+                            {/* <i className="fas fa-chart-line"></i>{" "} */}
                             <a href="osa">Outsourcing and Staff Augmentation</a>
                             <p style={{fontSize:"12px"}}>We provide outsourcing and staff augmentation to enhance your team’s capabilities.
 </p>
@@ -158,20 +158,20 @@ const Navbar = () => {
                   <h3>Other Solutions</h3>
                   <ul>
                   <li>
-                            <i className="fas fa-users"></i>{" "}
+                            {/* <i className="fas fa-users"></i>{" "} */}
                             <a href="saas">Software as a Service (SaaS)</a>
                             <p style={{fontSize:"12px"}}>We deliver scalable, cloud-based software solutions through SaaS for efficiency and growth.
 </p>
 
                           </li>
 <li>
-                            <i className="fas fa-users"></i>{" "}
+                            {/* <i className="fas fa-users"></i>{" "} */}
                             <a href="cas">Custom API Solutions</a>
                             <p style={{fontSize:"12px"}}>We create tailored API solutions to meet your specific business needs.</p>
 
                           </li>
 <li>
-                            <i className="fas fa-users"></i>{" "}
+                            {/* <i className="fas fa-users"></i>{" "} */}
                             <a href="pac">Partnership and Collaboration</a>
                             <p style={{fontSize:"12px"}}>We foster strategic partnerships to drive mutual growth and innovation.</p>
 
@@ -196,20 +196,20 @@ const Navbar = () => {
                   <h3>Payment Products</h3>
                   <ul>
                   <li>
-                            <i className="fas fa-chart-pie"></i>{" "}
+                            {/* <i className="fas fa-chart-pie"></i>{" "} */}
                             <a href="pms"> Payin Management Software</a>
                             <p style={{fontSize:"12px"}}>We provide payin management software for seamless payment processing.</p>
 
                           </li>
 <li>
-                            <i className="fas fa-chart-line"></i>{" "}
+                            {/* <i className="fas fa-chart-line"></i>{" "} */}
                             <a href="payoutms"> Payout Management Software</a>
                             <p style={{fontSize:"12px"}}>We offer payout management software for smooth and secure payment disbursements.</p>
 
                           </li>
 
 <li>
-                            <i className="fas fa-users"></i>{" "}
+                            {/* <i className="fas fa-users"></i>{" "} */}
                             <a href="trs"> Transaction Reconciliation Software</a>
                             <p style={{fontSize:"12px"}}>We provide software for accurate and efficient transaction reconciliation.
 </p>
@@ -227,7 +227,7 @@ const Navbar = () => {
                   <h3>Enterprise Products</h3>
                   <ul>
                   <li>
-                            <i className="fas fa-chart-line"></i>{" "}
+                            {/* <i className="fas fa-chart-line"></i>{" "} */}
                             <a href="crm">CRM Software</a>
                             <p style={{fontSize:"12px"}}>We provide CRM software to optimize customer relationships and boost sales</p>
 
@@ -235,13 +235,13 @@ const Navbar = () => {
 
 
 <li>
-                            <i className="fas fa-chart-pie"></i>{" "}
+                            {/* <i className="fas fa-chart-pie"></i>{" "} */}
                             <a href="erp"> ERP Software</a>
                             <p style={{fontSize:"12px"}}>We offer ERP software to streamline business processes and improve efficiency.</p>
 
                           </li>
  <li>
-                            <i className="fas fa-users"></i>{" "}
+                            {/* <i className="fas fa-users"></i>{" "} */}
                             <a href="pos">Retail POS Softwares</a>
                             <p style={{fontSize:"12px"}}>We offer retail POS software for efficient sales and inventory management.</p>
 
@@ -255,21 +255,21 @@ const Navbar = () => {
                   <h3>Management Products</h3>
                   <ul>
                   <li>
-                            <i className="fas fa-chart-line"></i>{" "}
+                            {/* <i className="fas fa-chart-line"></i>{" "} */}
                             <a href="ams"> API Management Software</a>
                             <p style={{fontSize:"12px"}}>We provide powerful API management software for seamless control and security.
 </p>
 
                           </li>
 <li>
-                            <i className="fas fa-users"></i>{" "}
+                            {/* <i className="fas fa-users"></i>{" "} */}
                             <a href="lms"> Loan Management Software</a>
                             <p style={{fontSize:"12px"}}>We provide loan management software for efficient loan tracking and processing.</p>
 
                           </li>
 
 <li>
-                            <i className="fas fa-chart-pie"></i>{" "}
+                            {/* <i className="fas fa-chart-pie"></i>{" "} */}
                             <a href="cms"> Chargeback Management Software</a>
                             <p style={{fontSize:"12px"}}>We offer chargeback management software to streamline dispute resolution.</p>
 
@@ -281,19 +281,19 @@ const Navbar = () => {
                   <h3>Other Products</h3>
                   <ul>
                   <li>
-                            <i className="fas fa-chart-line"></i>{" "}
+                            {/* <i className="fas fa-chart-line"></i>{" "} */}
                             <a href="hms"> Hospital Management Software</a>
                             <p style={{fontSize:"12px"}}>We provide software to simplify hospital management and improve care.</p>
 
                           </li>
                           <li>
-                            <i className="fas fa-users"></i>{" "}
+                            {/* <i className="fas fa-users"></i>{" "} */}
                             <a href="sms">School Management Software</a>
                             <p style={{fontSize:"12px"}}>We provide school management software to simplify administration and operations.</p>
 
                           </li>
                           <li>
-                            <i className="fas fa-users"></i>{" "}
+                            {/* <i className="fas fa-users"></i>{" "} */}
                             <a href="csms"> Co-op Society Management Software</a>
                             <p style={{fontSize:"12px"}}>We offer software to efficiently manage cooperative society operatio</p>
 
@@ -429,13 +429,13 @@ const Navbar = () => {
               
             )}
           </li> */}
-          <li><a
+          {/* <li><a
               href="/enterprises"
               className={activeLink === "enterprise" ? "active" : ""}
               onClick={() => handleLinkClick("enterprise")}
             >
               Enterprise
-            </a></li>
+            </a></li> */}
           {/* <li><a
               href="/pricing"
               className={activeLink === "pricing" ? "active" : ""}
@@ -450,13 +450,13 @@ const Navbar = () => {
             >
               Contact Sales
             </a></li>
-          <li className="login"><a
+          {/* <li className="login"><a
               href="#"
               className={activeLink === "login" ? "active" : ""}
               onClick={() => handleLinkClick("login")}
             >
               Log in
-            </a></li>
+            </a></li> */}
         </ul>
         {/* <button className="cta-button">Try Beelinx for free</button> */}
       </div>

@@ -16,7 +16,7 @@
 
 .logo img {
   height: 40px !important; /* Keep the same height */
-  width: 90px !important; /* Keep the same width */
+  width: 100px !important; /* Keep the same width */
   display: block;
   object-fit: fill !important;
   margin-top: 0px !important; /* Removed negative margin */
